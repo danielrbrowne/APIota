@@ -1,7 +1,8 @@
 import Foundation
 
-// Referenced from: https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml#http-status-codes-1
-
+/// Describes all valid HTTP status codes.
+///
+/// Valid HTTP status codes referenced from: https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml#http-status-codes-1
 public enum HTTPStatusCode: Int {
     case `continue` = 100
     case switchingProtocols = 101

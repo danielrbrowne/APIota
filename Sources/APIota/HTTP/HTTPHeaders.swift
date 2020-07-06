@@ -1,7 +1,9 @@
 import Foundation
 
-//public typealias HTTPHeaders = [HTTPHeader: String]
-
+/// Defines storage for a collection of `HTTPHeader`s for use in a `URLRequest`.
+///
+/// An instance can be initialized using a dictionary literal
+/// (e.g. `headers = [.contentType: HTTPMediaType.json.stringValue()]`).
 public struct HTTPHeaders {
 
     private var headers: [HTTPHeader: String]

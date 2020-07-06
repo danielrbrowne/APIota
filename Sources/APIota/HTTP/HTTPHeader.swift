@@ -1,5 +1,9 @@
 import Foundation
 
+/// Describes a HTTP header field by name.
+///
+/// Also contains all HTTP permanent message header field names,
+/// referenced from: https://www.iana.org/assignments/message-headers/message-headers.xhtml
 public struct HTTPHeader {
 
     // MARK: Internal variables
@@ -12,7 +16,7 @@ public struct HTTPHeader {
         self.stringValue = name
     }
 
-    // MARK: - Permanent message header field names
+    // MARK: - HTTP permanent message header field names
 
     public static let aIM = HTTPHeader("A-IM")
     public static let accept = HTTPHeader("Accept")
