@@ -1,4 +1,4 @@
-![APIota](https://raw.githubusercontent.com/danielrbrowne/APIota/master/apiota_logo.png)
+![APIota](../blob/feature/update-readme/apiota_logo.png?raw=true)
 
 # APIota
 
