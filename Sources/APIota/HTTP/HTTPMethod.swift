@@ -1,7 +1,8 @@
 import Foundation
 
-// Referenced from: https://www.iana.org/assignments/http-methods/http-methods.xhtml#methods
-
+/// Describes all valid HTTP methods.
+///
+/// Valid HTTP methods referenced from: https://www.iana.org/assignments/http-methods/http-methods.xhtml#methods
 public enum HTTPMethod: String {
     case ACL
     case BASELINECONTROL

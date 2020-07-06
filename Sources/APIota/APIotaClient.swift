@@ -1,16 +1,32 @@
 import Foundation
 import Combine
 
+/// Defines an API Client.
+///
+/// The definition includes a `session`, a `decoder` and a `baseURLComponents`.
+/// that should be used when sending `URLRequests` to the REST API server specified.
 public protocol APIotaClient {
+
+    /// A `URLSession` to use for sending `URLRequest`s from the Client to the REST API.
     var session: URLSession { get }
-    
+
+    /// A `JSONDecoder` to use for decoding the responses received by the Client from the REST API.
     var decoder: JSONDecoder { get }
-    
+
+    /// Used to define the base URL (i.e. `host`), and any other root-level components of the REST API.
     var baseUrlComponents: URLComponents { get }
-    
+
+    /// Send a `URLRequest` to the specified REST API, returning a response via a callback closure.
+    /// - Parameters:
+    ///   - endpoint: An `APIotaCodableEndpoint` defining the format of the `URLRequest` to be sent.
+    ///   - callback: A closure executed when a response (or an error) is returned as a result of
+    ///   sending the `URLRequest` to the REST API.
     func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T,
                                                callback: @escaping (Result<T.Response, Error>) -> Void)
 
+    /// Send a `URLRequest` to the specified REST API, returning a response via a Combine `AnyPublisher`.
+    /// - Parameter endpoint: An `APIotaCodableEndpoint` defining the format of the `URLRequest` to be sent.
+    /// - Returns: An `AnyPublisher` which can be integrated with SwiftUI or Combine code paths.
     @available(iOS 13.0, macOS 10.15, *)
     func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T) -> AnyPublisher<T.Response, Error>
 }

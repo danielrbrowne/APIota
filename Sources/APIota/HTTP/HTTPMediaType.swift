@@ -1,5 +1,9 @@
 import Foundation
 
+/// Describes media types for the `Content-Type` HTTP header.
+///
+/// Also contains a number of default media types,
+/// defined according to: https://tools.ietf.org/html/rfc2045#section-5
 public struct HTTPMediaType {
 
     // MARK: - Enum definitions
@@ -50,7 +54,7 @@ public struct HTTPMediaType {
     }
 }
 
-// MARK: - Default Content-Type values
+// MARK: - Default media type values
 
 extension HTTPMediaType {
 
