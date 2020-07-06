@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol APIotaEndpoint {
+public protocol APIotaCodableEndpoint {
     associatedtype Response: Decodable
     associatedtype Body: Encodable
     
@@ -19,7 +19,7 @@ public protocol APIotaEndpoint {
 
 // MARK: - Default method implementations
 
-extension APIotaEndpoint {
+extension APIotaCodableEndpoint {
     
     func request(baseUrlComponents: URLComponents) throws -> URLRequest {
         
