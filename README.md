@@ -108,6 +108,8 @@ cancellable = Self.apiClient.sendRequest(for: endpoint)
 
 ```
 
+A practical example of APIota in action can be found in the [Example Project](./Example/APIotaExample/).
+
 ## Reporting Bugs and Requesting Features
 
 Please ensure you use the relevant issue template when reporting a bug or requesting a new feature. Also please check first to see if there is an open issue that already covers your bug report or new feature request.

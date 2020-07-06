@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5330E5A824B35BA7008EEF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5A724B35BA7008EEF75 /* AppDelegate.swift */; };
+		5330E5AA24B35BA7008EEF75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5A924B35BA7008EEF75 /* SceneDelegate.swift */; };
+		5330E5AC24B35BA7008EEF75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5AB24B35BA7008EEF75 /* ContentView.swift */; };
+		5330E5AE24B35BAA008EEF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5330E5AD24B35BAA008EEF75 /* Assets.xcassets */; };
+		5330E5B124B35BAA008EEF75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5330E5B024B35BAA008EEF75 /* Preview Assets.xcassets */; };
+		5330E5B424B35BAA008EEF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5330E5B224B35BAA008EEF75 /* LaunchScreen.storyboard */; };
+		5330E5BD24B35BE8008EEF75 /* APIota in Frameworks */ = {isa = PBXBuildFile; productRef = 5330E5BC24B35BE8008EEF75 /* APIota */; };
+		5330E5C024B35CBF008EEF75 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5BF24B35CBF008EEF75 /* Todo.swift */; };
+		5330E5C324B35CEA008EEF75 /* JSONPlaceholdeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5C224B35CEA008EEF75 /* JSONPlaceholdeAPIClient.swift */; };
+		5330E5C524B35D02008EEF75 /* JSONPlaceholderGetTodosEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5C424B35D02008EEF75 /* JSONPlaceholderGetTodosEndpoint.swift */; };
+		5330E5C824B36B5F008EEF75 /* TodosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5C724B36B5F008EEF75 /* TodosListViewModel.swift */; };
+		5330E5CB24B36CBE008EEF75 /* TodosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5CA24B36CBE008EEF75 /* TodosListView.swift */; };
+		5330E5CD24B36CDF008EEF75 /* TodoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5CC24B36CDF008EEF75 /* TodoDetailsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5330E5A424B35BA7008EEF75 /* APIotaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIotaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5330E5A724B35BA7008EEF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5330E5A924B35BA7008EEF75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5330E5AB24B35BA7008EEF75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5330E5AD24B35BAA008EEF75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5330E5B024B35BAA008EEF75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5330E5B324B35BAA008EEF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5330E5B524B35BAA008EEF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5330E5BF24B35CBF008EEF75 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		5330E5C224B35CEA008EEF75 /* JSONPlaceholdeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholdeAPIClient.swift; sourceTree = "<group>"; };
+		5330E5C424B35D02008EEF75 /* JSONPlaceholderGetTodosEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderGetTodosEndpoint.swift; sourceTree = "<group>"; };
+		5330E5C724B36B5F008EEF75 /* TodosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosListViewModel.swift; sourceTree = "<group>"; };
+		5330E5CA24B36CBE008EEF75 /* TodosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosListView.swift; sourceTree = "<group>"; };
+		5330E5CC24B36CDF008EEF75 /* TodoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5330E5A124B35BA7008EEF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5330E5BD24B35BE8008EEF75 /* APIota in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5330E59B24B35BA6008EEF75 = {
+			isa = PBXGroup;
+			children = (
+				5330E5A624B35BA7008EEF75 /* APIotaExample */,
+				5330E5A524B35BA7008EEF75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5330E5A524B35BA7008EEF75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5330E5A424B35BA7008EEF75 /* APIotaExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5330E5A624B35BA7008EEF75 /* APIotaExample */ = {
+			isa = PBXGroup;
+			children = (
+				5330E5C924B36C58008EEF75 /* View */,
+				5330E5C624B36B47008EEF75 /* ViewModel */,
+				5330E5C124B35CD6008EEF75 /* APIClient */,
+				5330E5BE24B35C98008EEF75 /* Model */,
+				5330E5A724B35BA7008EEF75 /* AppDelegate.swift */,
+				5330E5A924B35BA7008EEF75 /* SceneDelegate.swift */,
+				5330E5AD24B35BAA008EEF75 /* Assets.xcassets */,
+				5330E5B224B35BAA008EEF75 /* LaunchScreen.storyboard */,
+				5330E5B524B35BAA008EEF75 /* Info.plist */,
+				5330E5AF24B35BAA008EEF75 /* Preview Content */,
+			);
+			path = APIotaExample;
+			sourceTree = "<group>";
+		};
+		5330E5AF24B35BAA008EEF75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5330E5B024B35BAA008EEF75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5330E5BE24B35C98008EEF75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5330E5BF24B35CBF008EEF75 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5330E5C124B35CD6008EEF75 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				5330E5C224B35CEA008EEF75 /* JSONPlaceholdeAPIClient.swift */,
+				5330E5C424B35D02008EEF75 /* JSONPlaceholderGetTodosEndpoint.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		5330E5C624B36B47008EEF75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5330E5C724B36B5F008EEF75 /* TodosListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5330E5C924B36C58008EEF75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5330E5AB24B35BA7008EEF75 /* ContentView.swift */,
+				5330E5CA24B36CBE008EEF75 /* TodosListView.swift */,
+				5330E5CC24B36CDF008EEF75 /* TodoDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5330E5A324B35BA7008EEF75 /* APIotaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5330E5B824B35BAA008EEF75 /* Build configuration list for PBXNativeTarget "APIotaExample" */;
+			buildPhases = (
+				5330E5A024B35BA7008EEF75 /* Sources */,
+				5330E5A124B35BA7008EEF75 /* Frameworks */,
+				5330E5A224B35BA7008EEF75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APIotaExample;
+			packageProductDependencies = (
+				5330E5BC24B35BE8008EEF75 /* APIota */,
+			);
+			productName = APIotaExample;
+			productReference = 5330E5A424B35BA7008EEF75 /* APIotaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5330E59C24B35BA6008EEF75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Daniel Browne";
+				TargetAttributes = {
+					5330E5A324B35BA7008EEF75 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 5330E59F24B35BA6008EEF75 /* Build configuration list for PBXProject "APIotaExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5330E59B24B35BA6008EEF75;
+			packageReferences = (
+				5330E5BB24B35BE8008EEF75 /* XCRemoteSwiftPackageReference "APIota" */,
+			);
+			productRefGroup = 5330E5A524B35BA7008EEF75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5330E5A324B35BA7008EEF75 /* APIotaExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5330E5A224B35BA7008EEF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5330E5B424B35BAA008EEF75 /* LaunchScreen.storyboard in Resources */,
+				5330E5B124B35BAA008EEF75 /* Preview Assets.xcassets in Resources */,
+				5330E5AE24B35BAA008EEF75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5330E5A024B35BA7008EEF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5330E5A824B35BA7008EEF75 /* AppDelegate.swift in Sources */,
+				5330E5AA24B35BA7008EEF75 /* SceneDelegate.swift in Sources */,
+				5330E5C324B35CEA008EEF75 /* JSONPlaceholdeAPIClient.swift in Sources */,
+				5330E5AC24B35BA7008EEF75 /* ContentView.swift in Sources */,
+				5330E5CD24B36CDF008EEF75 /* TodoDetailsView.swift in Sources */,
+				5330E5C024B35CBF008EEF75 /* Todo.swift in Sources */,
+				5330E5C524B35D02008EEF75 /* JSONPlaceholderGetTodosEndpoint.swift in Sources */,
+				5330E5CB24B36CBE008EEF75 /* TodosListView.swift in Sources */,
+				5330E5C824B36B5F008EEF75 /* TodosListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5330E5B224B35BAA008EEF75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5330E5B324B35BAA008EEF75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5330E5B624B35BAA008EEF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5330E5B724B35BAA008EEF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5330E5B924B35BAA008EEF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"APIotaExample/Preview Content\"";
+				DEVELOPMENT_TEAM = LFQL89P54T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = APIotaExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danbrowne.APIotaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5330E5BA24B35BAA008EEF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"APIotaExample/Preview Content\"";
+				DEVELOPMENT_TEAM = LFQL89P54T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = APIotaExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danbrowne.APIotaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5330E59F24B35BA6008EEF75 /* Build configuration list for PBXProject "APIotaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5330E5B624B35BAA008EEF75 /* Debug */,
+				5330E5B724B35BAA008EEF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5330E5B824B35BAA008EEF75 /* Build configuration list for PBXNativeTarget "APIotaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5330E5B924B35BAA008EEF75 /* Debug */,
+				5330E5BA24B35BAA008EEF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5330E5BB24B35BE8008EEF75 /* XCRemoteSwiftPackageReference "APIota" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:danielrbrowne/APIota.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5330E5BC24B35BE8008EEF75 /* APIota */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5330E5BB24B35BE8008EEF75 /* XCRemoteSwiftPackageReference "APIota" */;
+			productName = APIota;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5330E59C24B35BA6008EEF75 /* Project object */;
+}
