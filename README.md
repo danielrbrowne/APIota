@@ -108,7 +108,7 @@ cancellable = Self.apiClient.sendRequest(for: endpoint)
 
 ```
 
-A practical example of APIota in action can be found in the [Example Project](./Example/APIotaExample.xcproj).
+A practical example of APIota in action can be found in the [Example Project](./Example/APIotaExample/).
 
 ## Reporting Bugs and Requesting Features
 
