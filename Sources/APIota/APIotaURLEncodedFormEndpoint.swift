@@ -1,14 +1,17 @@
 import Foundation
 
-public protocol APIotaURLEncodedEndpoint: APIotaEndpoint {
+public protocol APIotaURLEncodedFormEndpoint: APIotaCodableEndpoint where Body == Data {
 
     var requestBodyQueryItems: [URLQueryItem] { get }
 }
 
-extension APIotaURLEncodedEndpoint {
+extension APIotaURLEncodedFormEndpoint {
 
     var httpBody: Body? {
-        nil
+        var requestBodyComponents = URLComponents()
+        requestBodyComponents.queryItems = requestBodyQueryItems
+
+        return requestBodyComponents.query?.data(using: .utf8)
     }
 
     var httpMethod: HTTPMethod {
@@ -27,10 +30,7 @@ extension APIotaURLEncodedEndpoint {
 
         var request = URLRequest(url: requestUrl)
         request.httpMethod = httpMethod.rawValue
-
-        var requestBodyComponents = URLComponents()
-        requestBodyComponents.queryItems = requestBodyQueryItems
-        request.httpBody = requestBodyComponents.query?.data(using: .utf8)
+        request.httpBody = httpBody
 
         if let headers = headers {
             request.allHTTPHeaderFields = headers.allHTTPHeaderFields

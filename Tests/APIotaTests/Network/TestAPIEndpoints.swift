@@ -1,7 +1,7 @@
 import Foundation
 @testable import APIota
 
-struct TestTodosGetEndpoint: APIotaEndpoint {
+struct TestTodosGetEndpoint: APIotaCodableEndpoint {
     typealias Response = [Todo]
     typealias Body = String
 
@@ -16,7 +16,7 @@ struct TestTodosGetEndpoint: APIotaEndpoint {
     let queryItems: [URLQueryItem]? = nil
 }
 
-struct TestTodosCreateEndpoint: APIotaEndpoint {
+struct TestTodosCreateEndpoint: APIotaCodableEndpoint {
     typealias Response = Todo
     typealias Body = Todo
 
@@ -31,7 +31,7 @@ struct TestTodosCreateEndpoint: APIotaEndpoint {
     let queryItems: [URLQueryItem]? = nil
 }
 
-struct TestTodosUpdateEndpoint: APIotaEndpoint {
+struct TestTodosUpdateEndpoint: APIotaCodableEndpoint {
     typealias Response = Todo
     typealias Body = Todo
 

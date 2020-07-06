@@ -1,7 +1,7 @@
 import Foundation
 @testable import APIota
 
-final class TestAPIClient: APIotaClient {
+struct TestAPIClient: APIotaClient {
 
     let session = URLSession.shared
 

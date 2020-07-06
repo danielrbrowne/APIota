@@ -8,20 +8,20 @@ public protocol APIotaClient {
     
     var baseUrlComponents: URLComponents { get }
     
-    func sendRequest<T: APIotaEndpoint>(for endpoint: T,
-                                        callback: @escaping (Result<T.Response, Error>) -> Void)
+    func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T,
+                                               callback: @escaping (Result<T.Response, Error>) -> Void)
 
     @available(iOS 13.0, macOS 10.15, *)
-    func sendRequest<T: APIotaEndpoint>(for endpoint: T) -> AnyPublisher<T.Response, Error>
+    func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T) -> AnyPublisher<T.Response, Error>
 }
 
 // MARK: - Default method implementations
 
 public extension APIotaClient {
     
-    func sendRequest<T: APIotaEndpoint>(for endpoint: T,
-                                        callback: @escaping (Result<T.Response, Error>) -> Void) {
-        
+    func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T,
+                                               callback: @escaping (Result<T.Response, Error>) -> Void) {
+
         var request: URLRequest!
         do {
             request = try endpoint.request(baseUrlComponents: baseUrlComponents)
@@ -54,7 +54,7 @@ public extension APIotaClient {
     }
 
     @available(iOS 13.0, macOS 10.15, *)
-    func sendRequest<T: APIotaEndpoint>(for endpoint: T) -> AnyPublisher<T.Response, Error> {
+    func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T) -> AnyPublisher<T.Response, Error> {
 
         var request: URLRequest!
         do {
