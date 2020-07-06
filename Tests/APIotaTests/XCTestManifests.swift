@@ -7,11 +7,15 @@ extension APIotaCRUDRequestsTests {
     // to regenerate.
     static let __allTests__APIotaCRUDRequestsTests = [
         ("testDELETE", testDELETE),
+        ("testDELETEPublisher", testDELETEPublisher),
         ("testGET", testGET),
         ("testGETPublisher", testGETPublisher),
         ("testPATCH", testPATCH),
+        ("testPATCHPublisher", testPATCHPublisher),
         ("testPOST", testPOST),
+        ("testPOSTPublisher", testPOSTPublisher),
         ("testPUT", testPUT),
+        ("testPUTPublisher", testPUTPublisher),
     ]
 }
 
