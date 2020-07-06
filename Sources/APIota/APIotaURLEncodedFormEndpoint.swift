@@ -10,7 +10,9 @@ public protocol APIotaURLEncodedFormEndpoint: APIotaCodableEndpoint where Body =
     var requestBodyQueryItems: [URLQueryItem] { get }
 }
 
-extension APIotaURLEncodedFormEndpoint {
+// MARK: - Default method implementations
+
+public extension APIotaURLEncodedFormEndpoint {
 
     /// A `Body` which is UTF-8 encoded `Data`, computed from `requestBodyQueryItems`.
     var httpBody: Body? {

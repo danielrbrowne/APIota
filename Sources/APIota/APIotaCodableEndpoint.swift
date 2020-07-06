@@ -33,7 +33,7 @@ public protocol APIotaCodableEndpoint {
 
 // MARK: - Default method implementations
 
-extension APIotaCodableEndpoint {
+public extension APIotaCodableEndpoint {
     
     func request(baseUrlComponents: URLComponents) throws -> URLRequest {
         
