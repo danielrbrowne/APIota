@@ -1,4 +1,4 @@
-![APIota](../apiota_logo.png?raw=true)
+![APIota](./apiota_logo.png?raw=true)
 
 # APIota
 
