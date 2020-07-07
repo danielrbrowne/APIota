@@ -120,12 +120,13 @@ In no particular order, and as a draft proposal:
 
 - [ ] Customizable JSON encoding strategies for requests.
 - [ ] Automatic `Content-Type` header inference for requests.
+- [ ] Customizable request parameter encoding strategies.
 - [ ] Configurable response caching for requests.
 - [ ] Multipart form data support.
 - [ ] Configurable request retrying.
 - [ ] Request authentication challenge handling.
 - [ ] Comprehensive test coverage.
-- [ ] Cocoapods and Homebrew installation support.
+- [ ] Cocoapods support.
 
 ## License
 
