@@ -130,4 +130,4 @@ In no particular order, and as a draft proposal:
 
 ## License
 
-APIota is completely open source and released under the MIT license. See the [LICENSE](https://github.com/danielrbrowne/APIota/blob/master/LICENSE) for details if you want to use it in your own project(s).
+APIota is completely open source and released under the MIT license. See [LICENSE.md](https://github.com/danielrbrowne/APIota/blob/master/LICENSE.md) for details if you want to use it in your own project(s).
