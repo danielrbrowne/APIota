@@ -19,7 +19,7 @@ APIota is a lightweight Swift library for defining API clients for use in iOS an
 
 ## Features
 
-- [x] JSON request and response body encoding and decoding support when using model objects conforming to `Codable`.
+- [x] JSON request and response body encoding and decoding support when using `Codable` model objects.
   - Encoding and decoding strategies can be customized by supplying configured `JSONEncoder` or `JSONDecoder` instances.
 - [x] [Combine](https://developer.apple.com/documentation/combine) support (when building against iOS 13.0+ or macOS 10.15+).
 - [x] URL-encoded form data request support.
