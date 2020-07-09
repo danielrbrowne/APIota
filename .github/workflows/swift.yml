@@ -1,4 +1,4 @@
-name: 'APIota CI'
+name: "APIota CI"
 
 on:
   push:
