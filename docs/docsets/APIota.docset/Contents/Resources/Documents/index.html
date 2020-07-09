@@ -113,6 +113,12 @@
             <p><img src="https://raw.githubusercontent.com/danielrbrowne/APIota/master/apiota_logo.png" alt="APIota"></p>
 <h1 id='apiota' class='heading'>APIota</h1>
 
+<p><a href="https://github.com/danielrbrowne/APIota/actions"><img src="https://github.com/danielrbrowne/APIota/workflows/APIota%20CI/badge.svg" alt="CI Status"></a>
+<a href="https://github.com/danielrbrowne/APIota/releases"><img src="https://img.shields.io/github/v/release/danielrbrowne/APIota" alt="Latest Release"></a>
+<a href="https://danielrbrowne.github.io/APIota/"><img src="https://img.shields.io/badge/Docs-here!-lightgrey" alt="API Docs"></a>
+<a href="https://github.com/danielrbrowne/APIota/blob/master/Package.swift"><img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS-yellow" alt="Supported Platforms"></a>
+<a href="https://github.com/danielrbrowne/APIota/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/danielrbrowne/APIota" alt="LICENSE"></a></p>
+
 <p>APIota is a lightweight Swift library for defining API clients for use in iOS and macOS apps. It is written using a protocol-oriented approach, and allows your <code>Codable</code> model objects to be decoded from JSON REST API endpoints really easily!</p>
 
 <ul>
@@ -134,80 +140,80 @@
 <h3 id='using-swift-package-manager' class='heading'>Using Swift Package Manager</h3>
 
 <p>Simply add the following to the <code>dependencies</code> array in your <code>Package.swift</code> file:</p>
-<pre class="highlight plaintext"><code>dependencies: [
-    …
-    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.1.0"),
-    …
-  ]
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="err">…</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/danielrbrowne/APIota"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"0.1.0"</span><span class="p">),</span>
+    <span class="err">…</span>
+  <span class="p">]</span>
 </code></pre>
 <h2 id='usage' class='heading'>Usage</h2>
 
 <p>At its core, defining API clients using APIota is very straightforward. There are two protocols, <code><a href="Protocols/APIotaClient.html">APIotaClient</a></code> and <code><a href="Protocols/APIotaCodableEndpoint.html">APIotaCodableEndpoint</a></code> which form the foundations of the library.</p>
 
 <p>The first step is to define an object specifying the base URL (i.e. the <code>host</code> in terms of an instance of <code>URLComponents</code>) for the REST API with which you are going to communicate with. An example is shown below:</p>
-<pre class="highlight plaintext"><code>struct JSONPlaceholderAPIClient: APIotaClient {
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">JSONPlaceholderAPIClient</span><span class="p">:</span> <span class="kt">APIotaClient</span> <span class="p">{</span>
 
-    let session = URLSession.shared
+    <span class="k">let</span> <span class="nv">session</span> <span class="o">=</span> <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span>
 
-    let decoder = JSONDecoder()
+    <span class="k">let</span> <span class="nv">decoder</span> <span class="o">=</span> <span class="kt">JSONDecoder</span><span class="p">()</span>
 
-    var baseUrlComponents: URLComponents = {
-        var components = URLComponents()
-        components.host = "jsonplaceholder.typicode.com"
-        components.scheme = "https"
+    <span class="k">var</span> <span class="nv">baseUrlComponents</span><span class="p">:</span> <span class="kt">URLComponents</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">components</span> <span class="o">=</span> <span class="kt">URLComponents</span><span class="p">()</span>
+        <span class="n">components</span><span class="o">.</span><span class="n">host</span> <span class="o">=</span> <span class="s">"jsonplaceholder.typicode.com"</span>
+        <span class="n">components</span><span class="o">.</span><span class="n">scheme</span> <span class="o">=</span> <span class="s">"https"</span>
 
-        return components
-    }()
-}
+        <span class="k">return</span> <span class="n">components</span>
+    <span class="p">}()</span>
+<span class="p">}</span>
 
 </code></pre>
 
 <p>The next step is to define the endpoint that the requests should be sent to. An example of a simple GET request is shown below, however more complex requests can also be defined easily:</p>
-<pre class="highlight plaintext"><code>struct JSONPlaceholderGetTodosEndpoint: APIotaCodableEndpoint {
-    typealias Response = [Todo]
-    typealias Body = String
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">JSONPlaceholderGetTodosEndpoint</span><span class="p">:</span> <span class="kt">APIotaCodableEndpoint</span> <span class="p">{</span>
+    <span class="kd">typealias</span> <span class="kt">Response</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Todo</span><span class="p">]</span>
+    <span class="kd">typealias</span> <span class="kt">Body</span> <span class="o">=</span> <span class="kt">String</span>
 
-    let headers: HTTPHeaders? = nil
+    <span class="k">let</span> <span class="nv">headers</span><span class="p">:</span> <span class="kt">HTTPHeaders</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
 
-    let httpBody: Body? = nil
+    <span class="k">let</span> <span class="nv">httpBody</span><span class="p">:</span> <span class="kt">Body</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
 
-    let httpMethod: HTTPMethod = .GET
+    <span class="k">let</span> <span class="nv">httpMethod</span><span class="p">:</span> <span class="kt">HTTPMethod</span> <span class="o">=</span> <span class="o">.</span><span class="kt">GET</span>
 
-    let path = "/todos"
+    <span class="k">let</span> <span class="nv">path</span> <span class="o">=</span> <span class="s">"/todos"</span>
 
-    let queryItems: [URLQueryItem]? = nil
-}
+    <span class="k">let</span> <span class="nv">queryItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">URLQueryItem</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">}</span>
 </code></pre>
 
 <p>Requests can then be sent to REST API via an instance of the Client as follows:</p>
-<pre class="highlight plaintext"><code>…
-private static let apiClient = TestAPIClient()
-private(set) lazy var cancellable: AnyCancellable? = nil
-private var todosList: [Todo] = []
-…
+<pre class="highlight swift"><code><span class="err">…</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">apiClient</span> <span class="o">=</span> <span class="kt">TestAPIClient</span><span class="p">()</span>
+<span class="kd">private(set)</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">cancellable</span><span class="p">:</span> <span class="kt">AnyCancellable</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="kd">private</span> <span class="k">var</span> <span class="nv">todosList</span><span class="p">:</span> <span class="p">[</span><span class="kt">Todo</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="err">…</span>
 
-// Example 1: API response returned via a callback closure
+<span class="c1">// Example 1: API response returned via a callback closure</span>
 
-let endpoint = JSONPlaceholderGetTodosEndpoint()
-Self.apiClient.sendRequest(for: endpoint) { result in
-    // Handle the returned `Result&lt;T.Response, Error&gt;`
-    switch result {
-    case .success(let todosList):
-        self.todosList = todosList
-    case .failure(let error):
-        // Handle the error returned from the API Client
-    }
-}
+<span class="k">let</span> <span class="nv">endpoint</span> <span class="o">=</span> <span class="kt">JSONPlaceholderGetTodosEndpoint</span><span class="p">()</span>
+<span class="k">Self</span><span class="o">.</span><span class="n">apiClient</span><span class="o">.</span><span class="nf">sendRequest</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">endpoint</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="c1">// Handle the returned `Result&lt;T.Response, Error&gt;`</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">todosList</span><span class="p">):</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">todosList</span> <span class="o">=</span> <span class="n">todosList</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="c1">// Handle the error returned from the API Client</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-// Example 2: API response returned via a Combine publisher
+<span class="c1">// Example 2: API response returned via a Combine publisher</span>
 
-let endpoint = JSONPlaceholderGetTodosEndpoint()
-cancellable = Self.apiClient.sendRequest(for: endpoint)
-    .catch({ error in
-        // Handle the error returned from the API Client
-    })
-    .assign(to: \.todosList, on: self)
-}
+<span class="k">let</span> <span class="nv">endpoint</span> <span class="o">=</span> <span class="kt">JSONPlaceholderGetTodosEndpoint</span><span class="p">()</span>
+<span class="n">cancellable</span> <span class="o">=</span> <span class="k">Self</span><span class="o">.</span><span class="n">apiClient</span><span class="o">.</span><span class="nf">sendRequest</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">endpoint</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">catch</span><span class="p">({</span> <span class="n">error</span> <span class="k">in</span>
+        <span class="c1">// Handle the error returned from the API Client</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="nf">assign</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="err">\</span><span class="o">.</span><span class="n">todosList</span><span class="p">,</span> <span class="nv">on</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
+<span class="p">}</span>
 
 </code></pre>
 <h2 id='documentation-and-references' class='heading'>Documentation and References</h2>
