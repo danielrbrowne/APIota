@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           APIota Docs
         </a>
-         (13% documented)
+         (21% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -69,7 +69,7 @@
                 <a class="nav-group-task-link" href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/HTTPStatusCodeCategory.html">HTTPStatusCodeCategory</a>
+                <a class="nav-group-task-link" href="../Enums/HTTPStatusCode/Category.html">– Category</a>
               </li>
             </ul>
           </li>
@@ -153,7 +153,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A <code>Dictionary</code> representation of all contained header fields within the receiver.</p>
 
                       </div>
                       <div class="declaration">
@@ -180,7 +180,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Replace the current value for a given <code><a href="../Structs/HTTPHeader.html">HTTPHeader</a></code> with a new value
+(or adds it to the receiver if a header with the same name was not already present).</p>
 
                       </div>
                       <div class="declaration">
@@ -190,6 +191,37 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">replaceOrAdd</span><span class="p">(</span><span class="nv">header</span><span class="p">:</span> <span class="kt"><a href="../Structs/HTTPHeader.html">HTTPHeader</a></span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>header</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/HTTPHeader.html">HTTPHeader</a></code> whose corresponding value should be replaced or set.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>String</code> value to associated with a given header.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -207,7 +239,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove a <code><a href="../Structs/HTTPHeader.html">HTTPHeader</a></code> (and its corresponding value) if it exists in the receiver.
+(This method has no effect if no header with a given name exists in the receiver).</p>
 
                       </div>
                       <div class="declaration">
@@ -217,6 +250,25 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">header</span><span class="p">:</span> <span class="kt"><a href="../Structs/HTTPHeader.html">HTTPHeader</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>header</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/HTTPHeader.html">HTTPHeader</a></code> to remove from the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -234,7 +286,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Retrieves the value for a given <code><a href="../Structs/HTTPHeader.html">HTTPHeader</a></code> (if it is present in the receiver).</p>
 
                       </div>
                       <div class="declaration">
@@ -244,6 +296,29 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">value</span><span class="p">(</span><span class="k">for</span> <span class="nv">header</span><span class="p">:</span> <span class="kt"><a href="../Structs/HTTPHeader.html">HTTPHeader</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>header</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/HTTPHeader.html">HTTPHeader</a></code> to inspect.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>String</code> value for the corresponding header (if it was present).</p>
                       </div>
                     </section>
                   </div>
@@ -264,9 +339,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s30ExpressibleByDictionaryLiteralP010dictionaryD0x3KeyQz_5ValueQztd_tcfc"></a>
+                    <a name="/s:6APIota11HTTPHeadersV17dictionaryLiteralAcA10HTTPHeaderV_SStd_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(dictionaryLiteral:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s30ExpressibleByDictionaryLiteralP010dictionaryD0x3KeyQz_5ValueQztd_tcfc">init(dictionaryLiteral:<wbr>)</a>
+                    <a class="token" href="#/s:6APIota11HTTPHeadersV17dictionaryLiteralAcA10HTTPHeaderV_SStd_tcfc">init(dictionaryLiteral:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -274,7 +349,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Initializes a <code>HTTPHeaders</code> based on a <code>Dictionary</code> literal.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -283,6 +359,25 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">dictionaryLiteral</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Structs/HTTPHeader.html">HTTPHeader</a></span><span class="p">,</span> <span class="kt">String</span><span class="p">)</span><span class="o">...</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Dictionary</code> literal (e.g. <code>[.contentType: &quot;application/json&quot;]</code>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

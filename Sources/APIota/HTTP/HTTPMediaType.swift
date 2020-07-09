@@ -8,14 +8,32 @@ public struct HTTPMediaType {
 
     // MARK: - Enum definitions
 
+    /// The identifier corresponding to `type` portion of a HTTP media type `String`.
     public enum TypeIdentifier: String {
+
+        /// Any kind of data. This is essentially a wildcard.
         case any
+
+        /// Other data, typically uninterpreted binary data
+        /// or information to be processed by an application.
         case application
+
+        /// Audio data.
         case audio
+
+        /// Image data.
         case image
+
+        /// An encapsulated message, all or part of some kind of message object.
         case message
+
+        /// Data consisting of multiple entities of indepdendent data types.
         case multipart
+
+        /// Textual information.
         case text
+
+        /// Video data.
         case video
     }
 
@@ -29,6 +47,11 @@ public struct HTTPMediaType {
 
     // MARK: - Initialization
 
+    /// Initializes a `HTTPMediaType` based on various required and optional components.
+    /// - Parameters:
+    ///   - type: The `TypeIdentifier` of the HTTP media type.
+    ///   - subType: The subtype `String` of the HTTP media type.
+    ///   - parameters: An optional `Dictionary` of additional parameters.
     public init(type: TypeIdentifier,
                 subType: String,
                 parameters: [String: String]? = nil) {
@@ -39,6 +62,8 @@ public struct HTTPMediaType {
 
     // MARK: - Public methods
 
+    /// The `String` representation of the receiver.
+    /// - Returns: A `String` representation suitable for use as a `HTTPHeader` value string.
     public func toString() -> String {
         var stringRepresentation = "\(type)/\(subType)"
 
@@ -176,6 +201,7 @@ extension HTTPMediaType: Equatable {
 
 extension HTTPMediaType: CustomStringConvertible {
 
+    /// A string description of the `HTTPMediaType`.
     public var description: String {
         return toString()
     }
