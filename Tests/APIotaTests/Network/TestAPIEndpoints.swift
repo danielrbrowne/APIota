@@ -5,6 +5,8 @@ struct TestTodosGetEndpoint: APIotaCodableEndpoint {
     typealias Response = [Todo]
     typealias Body = String
 
+    let encoder = JSONEncoder()
+
     let headers: HTTPHeaders? = nil
 
     let httpBody: Body? = nil
@@ -20,6 +22,8 @@ struct TestTodosCreateEndpoint: APIotaCodableEndpoint {
     typealias Response = Todo
     typealias Body = Todo
 
+    let encoder = JSONEncoder()
+
     let headers: HTTPHeaders? = [.contentType: HTTPMediaType.json.toString()]
 
     let httpBody: Body?
@@ -34,6 +38,8 @@ struct TestTodosCreateEndpoint: APIotaCodableEndpoint {
 struct TestTodosUpdateEndpoint: APIotaCodableEndpoint {
     typealias Response = Todo
     typealias Body = Todo
+
+    let encoder = JSONEncoder()
 
     let headers: HTTPHeaders? = [.contentType: HTTPMediaType.json.toString()]
 
