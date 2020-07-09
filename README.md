@@ -2,7 +2,8 @@
 
 # APIota
 
-![](https://github.com/danielrbrowne/APIota/workflows/APIota%20CI/badge.svg)
+[![CI Status](https://github.com/danielrbrowne/APIota/workflows/APIota%20CI/badge.svg)](https://github.com/danielrbrowne/APIota/actions)
+[![Latest Release](https://img.shields.io/github/v/tag/danielrbrowne/APIota)](https://github.com/danielrbrowne/APIota/releases)
 
 APIota is a lightweight Swift library for defining API clients for use in iOS and macOS apps. It is written using a protocol-oriented approach, and allows your `Codable` model objects to be decoded from JSON REST API endpoints really easily!
 
