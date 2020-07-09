@@ -108,6 +108,10 @@ cancellable = Self.apiClient.sendRequest(for: endpoint)
 
 ```
 
+## Documentation and References
+
+Full documentation of APIota can be found in the [API docs](https://danielrbrowne.github.io/APIota/).
+
 A practical example of APIota in action can be found in the [Example Project](./Example/APIotaExample/).
 
 ## Reporting Bugs and Requesting Features
