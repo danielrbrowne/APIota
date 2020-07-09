@@ -12,6 +12,8 @@ public struct HTTPHeader {
 
     // MARK: - Initialization
 
+    /// Initializes a `HTTPHeader` based on a given name.
+    /// - Parameter name: The string used to specify the name of the initialized `HTTPHeader`.
     public init(_ name: String) {
         self.stringValue = name
     }

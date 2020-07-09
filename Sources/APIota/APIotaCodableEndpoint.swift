@@ -5,7 +5,11 @@ import Foundation
 /// The definition must include a `path` and a `httpMethod`.
 /// It can also optionaly include definitions for `headers`, `httpBody` and `queryItems`.
 public protocol APIotaCodableEndpoint {
+
+    /// A type alias for the decoded object for the response to a `URLRequest`.
     associatedtype Response: Decodable
+
+    /// A type alias for the encoded data attached to the body of a `URLRequest`.
     associatedtype Body: Encodable
 
     /// A `HTTPHeaders` instance used for configuring the HTTP headers attached

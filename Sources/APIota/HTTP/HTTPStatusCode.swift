@@ -4,6 +4,46 @@ import Foundation
 ///
 /// Valid HTTP status codes referenced from: https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml#http-status-codes-1
 public enum HTTPStatusCode: Int {
+
+    /// The category of a `HTTPStatus` code.
+    public enum Category: Int {
+
+        /// An informational (i.e. 100 - 199) response.
+        case informational
+
+        /// A successful (i.e. 200 - 299) response.
+        case successful
+
+        /// A redirection (i.e. 300 - 399) response.
+        case redirection
+
+        /// A client error (i.e. 400 - 499) response.
+        case clientError
+
+        /// A server error (i.e. 500 - 599) response.
+        case serverError
+
+        /// A response of unknown category.
+        case unknown
+
+        public init(rawValue: Int) {
+            switch rawValue {
+            case 100...199:
+                self = .informational
+            case 200...299:
+                self = .successful
+            case 300...399:
+                self = .redirection
+            case 400...499:
+                self = .clientError
+            case 500...599:
+                self = .serverError
+            default:
+                self = .unknown
+            }
+        }
+    }
+
     case `continue` = 100
     case switchingProtocols = 101
     case processing = 102
@@ -71,38 +111,13 @@ public enum HTTPStatusCode: Int {
     case networkAuthenticationRequired = 511
 }
 
-public enum HTTPStatusCodeCategory: Int {
-    case informational
-    case successful
-    case redirection
-    case clientError
-    case serverError
-    case unknown
-
-    public init(rawValue: Int) {
-        switch rawValue {
-        case 100...199:
-            self = .informational
-        case 200...299:
-            self = .successful
-        case 300...399:
-            self = .redirection
-        case 400...499:
-            self = .clientError
-        case 500...599:
-            self = .serverError
-        default:
-            self = .unknown
-        }
-    }
-}
-
 // MARK: - HTTPStatusCodeCategory extension
 
 public extension HTTPStatusCode {
 
-    var category: HTTPStatusCodeCategory {
-        return HTTPStatusCodeCategory(rawValue: self.rawValue)
+    /// The category of the `HTTPStatusCode` based on the code itself.
+    var category: Category {
+        return Category(rawValue: self.rawValue)
     }
 }
 
@@ -110,6 +125,7 @@ public extension HTTPStatusCode {
 
 extension HTTPStatusCode: CustomStringConvertible {
 
+    /// A string description of the `HTTPStatusCode`.
     public var description: String {
         switch self {
         // 1xx

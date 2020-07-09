@@ -1,1326 +1,1179 @@
 {
   "warnings": [
     {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/APIotaCodableEndpoint.swift",
-      "line": 8,
-      "symbol": "APIotaCodableEndpoint.Response",
-      "symbol_kind": "source.lang.swift.decl.associatedtype",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/APIotaCodableEndpoint.swift",
-      "line": 9,
-      "symbol": "APIotaCodableEndpoint.Body",
-      "symbol_kind": "source.lang.swift.decl.associatedtype",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/Error/APIotaClientError.swift",
-      "line": 5,
-      "symbol": "APIotaClientError.clientSide",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/Error/APIotaClientError.swift",
-      "line": 6,
-      "symbol": "APIotaClientError.failedResponse(statusCode:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/Error/APIotaClientError.swift",
-      "line": 7,
-      "symbol": "APIotaClientError.unexpectedResponse",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 15,
-      "symbol": "HTTPHeader.init(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "HTTPHeader.aIM",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 22,
+      "line": 24,
       "symbol": "HTTPHeader.accept",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 23,
+      "line": 25,
       "symbol": "HTTPHeader.acceptAdditions",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 24,
+      "line": 26,
       "symbol": "HTTPHeader.acceptCharset",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 25,
+      "line": 27,
       "symbol": "HTTPHeader.acceptDatetime",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 26,
+      "line": 28,
       "symbol": "HTTPHeader.acceptEncoding",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 27,
+      "line": 29,
       "symbol": "HTTPHeader.acceptFeatures",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 28,
+      "line": 30,
       "symbol": "HTTPHeader.acceptLanguage",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 29,
+      "line": 31,
       "symbol": "HTTPHeader.acceptPatch",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 30,
+      "line": 32,
       "symbol": "HTTPHeader.acceptPost",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 31,
+      "line": 33,
       "symbol": "HTTPHeader.acceptRanges",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 32,
+      "line": 34,
       "symbol": "HTTPHeader.age",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 33,
+      "line": 35,
       "symbol": "HTTPHeader.allow",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 34,
+      "line": 36,
       "symbol": "HTTPHeader.alpn",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 35,
+      "line": 37,
       "symbol": "HTTPHeader.altSvc",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 36,
+      "line": 38,
       "symbol": "HTTPHeader.altUsed",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 37,
+      "line": 39,
       "symbol": "HTTPHeader.alternates",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 38,
+      "line": 40,
       "symbol": "HTTPHeader.applyToRedirectRef",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 39,
+      "line": 41,
       "symbol": "HTTPHeader.authenticationControl",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 40,
+      "line": 42,
       "symbol": "HTTPHeader.authenticationInfo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 41,
+      "line": 43,
       "symbol": "HTTPHeader.authorization",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 42,
+      "line": 44,
       "symbol": "HTTPHeader.cExt",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 43,
+      "line": 45,
       "symbol": "HTTPHeader.cMan",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 44,
+      "line": 46,
       "symbol": "HTTPHeader.cOpt",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 45,
+      "line": 47,
       "symbol": "HTTPHeader.cPEP",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 46,
+      "line": 48,
       "symbol": "HTTPHeader.cPEPInfo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 47,
+      "line": 49,
       "symbol": "HTTPHeader.cacheControl",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 48,
+      "line": 50,
       "symbol": "HTTPHeader.calManagedId",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 49,
+      "line": 51,
       "symbol": "HTTPHeader.calDAVTimezones",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 50,
+      "line": 52,
       "symbol": "HTTPHeader.cdnLoop",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 51,
+      "line": 53,
       "symbol": "HTTPHeader.certNotAfter",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 52,
+      "line": 54,
       "symbol": "HTTPHeader.certNotBefore",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 53,
+      "line": 55,
       "symbol": "HTTPHeader.close",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 54,
+      "line": 56,
       "symbol": "HTTPHeader.connection",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 55,
+      "line": 57,
       "symbol": "HTTPHeader.contentBase",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 56,
+      "line": 58,
       "symbol": "HTTPHeader.contentDisposition",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 57,
+      "line": 59,
       "symbol": "HTTPHeader.contentEncoding",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 58,
+      "line": 60,
       "symbol": "HTTPHeader.contentId",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 59,
+      "line": 61,
       "symbol": "HTTPHeader.contentLanguage",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 60,
+      "line": 62,
       "symbol": "HTTPHeader.contentLength",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 61,
+      "line": 63,
       "symbol": "HTTPHeader.contentLocation",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 62,
+      "line": 64,
       "symbol": "HTTPHeader.contentMD5",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 63,
+      "line": 65,
       "symbol": "HTTPHeader.contentRange",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 64,
+      "line": 66,
       "symbol": "HTTPHeader.contentScriptType",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 65,
+      "line": 67,
       "symbol": "HTTPHeader.contentStyleType",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 66,
+      "line": 68,
       "symbol": "HTTPHeader.contentType",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 67,
+      "line": 69,
       "symbol": "HTTPHeader.contentVersion",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 68,
+      "line": 70,
       "symbol": "HTTPHeader.cookie",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 69,
+      "line": 71,
       "symbol": "HTTPHeader.cookie2",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 70,
+      "line": 72,
       "symbol": "HTTPHeader.dasl",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 71,
+      "line": 73,
       "symbol": "HTTPHeader.dav",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 72,
+      "line": 74,
       "symbol": "HTTPHeader.date",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 73,
+      "line": 75,
       "symbol": "HTTPHeader.defaultStyle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 74,
+      "line": 76,
       "symbol": "HTTPHeader.deltaBase",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 75,
+      "line": 77,
       "symbol": "HTTPHeader.depth",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 76,
+      "line": 78,
       "symbol": "HTTPHeader.derivedFrom",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 77,
+      "line": 79,
       "symbol": "HTTPHeader.destination",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 78,
+      "line": 80,
       "symbol": "HTTPHeader.differentialId",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 79,
+      "line": 81,
       "symbol": "HTTPHeader.digest",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 80,
+      "line": 82,
       "symbol": "HTTPHeader.earlyData",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 81,
+      "line": 83,
       "symbol": "HTTPHeader.eTag",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 82,
+      "line": 84,
       "symbol": "HTTPHeader.expect",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 83,
+      "line": 85,
       "symbol": "HTTPHeader.expectCT",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 84,
+      "line": 86,
       "symbol": "HTTPHeader.expires",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 85,
+      "line": 87,
       "symbol": "HTTPHeader.ext",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 86,
+      "line": 88,
       "symbol": "HTTPHeader.forwarded",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 87,
+      "line": 89,
       "symbol": "HTTPHeader.from",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 88,
+      "line": 90,
       "symbol": "HTTPHeader.getProfile",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 89,
+      "line": 91,
       "symbol": "HTTPHeader.hobareg",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 90,
+      "line": 92,
       "symbol": "HTTPHeader.host",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 91,
+      "line": 93,
       "symbol": "HTTPHeader.http2Settings",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 92,
+      "line": 94,
       "symbol": "HTTPHeader.im",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 93,
+      "line": 95,
       "symbol": "HTTPHeader.if",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 94,
+      "line": 96,
       "symbol": "HTTPHeader.ifMatch",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 95,
+      "line": 97,
       "symbol": "HTTPHeader.ifModifiedSince",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 96,
+      "line": 98,
       "symbol": "HTTPHeader.ifNoneMatch",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 97,
+      "line": 99,
       "symbol": "HTTPHeader.ifRange",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 98,
+      "line": 100,
       "symbol": "HTTPHeader.ifScheduledTagMatch",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 99,
+      "line": 101,
       "symbol": "HTTPHeader.ifUnmodifiedSince",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 100,
+      "line": 102,
       "symbol": "HTTPHeader.includeRefferedTokenBindingId",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 101,
+      "line": 103,
       "symbol": "HTTPHeader.keepAlive",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 102,
+      "line": 104,
       "symbol": "HTTPHeader.label",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 103,
+      "line": 105,
       "symbol": "HTTPHeader.lastModified",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 104,
+      "line": 106,
       "symbol": "HTTPHeader.link",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 105,
+      "line": 107,
       "symbol": "HTTPHeader.location",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 106,
+      "line": 108,
       "symbol": "HTTPHeader.lockToken",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 107,
+      "line": 109,
       "symbol": "HTTPHeader.man",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 108,
+      "line": 110,
       "symbol": "HTTPHeader.maxForwards",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 109,
+      "line": 111,
       "symbol": "HTTPHeader.mementoDatetime",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 110,
+      "line": 112,
       "symbol": "HTTPHeader.meter",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 111,
+      "line": 113,
       "symbol": "HTTPHeader.mimeVersion",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 112,
+      "line": 114,
       "symbol": "HTTPHeader.negotiate",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 113,
+      "line": 115,
       "symbol": "HTTPHeader.oDataEntityId",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 114,
+      "line": 116,
       "symbol": "HTTPHeader.oDataIsolation",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 115,
+      "line": 117,
       "symbol": "HTTPHeader.oDataMaxVersion",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 116,
+      "line": 118,
       "symbol": "HTTPHeader.oDataVersion",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 117,
+      "line": 119,
       "symbol": "HTTPHeader.opt",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 118,
+      "line": 120,
       "symbol": "HTTPHeader.optionalWWWAuthenticate",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 119,
+      "line": 121,
       "symbol": "HTTPHeader.orderingType",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 120,
+      "line": 122,
       "symbol": "HTTPHeader.origin",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 121,
+      "line": 123,
       "symbol": "HTTPHeader.oscore",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 122,
+      "line": 124,
       "symbol": "HTTPHeader.overwrite",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 123,
+      "line": 125,
       "symbol": "HTTPHeader.p3p",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 124,
+      "line": 126,
       "symbol": "HTTPHeader.pep",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 125,
+      "line": 127,
       "symbol": "HTTPHeader.picsLabel",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 126,
+      "line": 128,
       "symbol": "HTTPHeader.pepInfo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 127,
+      "line": 129,
       "symbol": "HTTPHeader.position",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 128,
+      "line": 130,
       "symbol": "HTTPHeader.pragma",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 129,
+      "line": 131,
       "symbol": "HTTPHeader.prefer",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 130,
+      "line": 132,
       "symbol": "HTTPHeader.preferenceApplied",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 131,
+      "line": 133,
       "symbol": "HTTPHeader.profileObject",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 132,
+      "line": 134,
       "symbol": "HTTPHeader.protocol",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 133,
+      "line": 135,
       "symbol": "HTTPHeader.protocolInfo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 134,
+      "line": 136,
       "symbol": "HTTPHeader.protocolQuery",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 135,
+      "line": 137,
       "symbol": "HTTPHeader.protocolRequest",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 136,
+      "line": 138,
       "symbol": "HTTPHeader.proxyAuthenticate",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 137,
+      "line": 139,
       "symbol": "HTTPHeader.proxyAuthenticationInfo",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 138,
+      "line": 140,
       "symbol": "HTTPHeader.proxyAuthorization",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 139,
+      "line": 141,
       "symbol": "HTTPHeader.proxyFeatures",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 140,
+      "line": 142,
       "symbol": "HTTPHeader.proxyInstruction",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 141,
+      "line": 143,
       "symbol": "HTTPHeader.public",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 142,
+      "line": 144,
       "symbol": "HTTPHeader.publicKeyPins",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 143,
+      "line": 145,
       "symbol": "HTTPHeader.publicKeyPinsReportOnly",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 144,
+      "line": 146,
       "symbol": "HTTPHeader.range",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 145,
+      "line": 147,
       "symbol": "HTTPHeader.redirectRef",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 146,
+      "line": 148,
       "symbol": "HTTPHeader.referer",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 147,
+      "line": 149,
       "symbol": "HTTPHeader.replayNotice",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 148,
+      "line": 150,
       "symbol": "HTTPHeader.retryAfter",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 149,
+      "line": 151,
       "symbol": "HTTPHeader.safe",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 150,
+      "line": 152,
       "symbol": "HTTPHeader.scheduleReply",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 151,
+      "line": 153,
       "symbol": "HTTPHeader.scheduleTag",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 152,
+      "line": 154,
       "symbol": "HTTPHeader.secTokenBinding",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 153,
+      "line": 155,
       "symbol": "HTTPHeader.secWebsocketAccept",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 154,
+      "line": 156,
       "symbol": "HTTPHeader.secWebsocketExtensions",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 155,
+      "line": 157,
       "symbol": "HTTPHeader.secWebsocketKey",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 156,
+      "line": 158,
       "symbol": "HTTPHeader.secWebsocketProtocol",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 157,
+      "line": 159,
       "symbol": "HTTPHeader.secWebsocketVersion",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 158,
+      "line": 160,
       "symbol": "HTTPHeader.securityScheme",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 159,
+      "line": 161,
       "symbol": "HTTPHeader.server",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 160,
+      "line": 162,
       "symbol": "HTTPHeader.setCookie",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 161,
+      "line": 163,
       "symbol": "HTTPHeader.setCookie2",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 162,
+      "line": 164,
       "symbol": "HTTPHeader.setProfile",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 163,
+      "line": 165,
       "symbol": "HTTPHeader.slug",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 164,
+      "line": 166,
       "symbol": "HTTPHeader.soapAuction",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 165,
+      "line": 167,
       "symbol": "HTTPHeader.statusUri",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 166,
+      "line": 168,
       "symbol": "HTTPHeader.strictTransportSecurity",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 167,
+      "line": 169,
       "symbol": "HTTPHeader.sunset",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 168,
+      "line": 170,
       "symbol": "HTTPHeader.surrogateCapability",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 169,
+      "line": 171,
       "symbol": "HTTPHeader.surrogateControl",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 170,
+      "line": 172,
       "symbol": "HTTPHeader.tcn",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 171,
+      "line": 173,
       "symbol": "HTTPHeader.te",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 172,
+      "line": 174,
       "symbol": "HTTPHeader.timeout",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 173,
+      "line": 175,
       "symbol": "HTTPHeader.topic",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 174,
+      "line": 176,
       "symbol": "HTTPHeader.trailer",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 175,
+      "line": 177,
       "symbol": "HTTPHeader.transferEncoding",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 176,
+      "line": 178,
       "symbol": "HTTPHeader.ttl",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 177,
+      "line": 179,
       "symbol": "HTTPHeader.urgency",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 178,
+      "line": 180,
       "symbol": "HTTPHeader.uri",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 179,
+      "line": 181,
       "symbol": "HTTPHeader.upgrade",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 180,
+      "line": 182,
       "symbol": "HTTPHeader.userAgent",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 181,
+      "line": 183,
       "symbol": "HTTPHeader.variantVary",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 182,
+      "line": 184,
       "symbol": "HTTPHeader.vary",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 183,
+      "line": 185,
       "symbol": "HTTPHeader.via",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 184,
+      "line": 186,
       "symbol": "HTTPHeader.wwwAuthenticate",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 185,
+      "line": 187,
       "symbol": "HTTPHeader.wantDigest",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 186,
+      "line": 188,
       "symbol": "HTTPHeader.warning",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 187,
+      "line": 189,
       "symbol": "HTTPHeader.xContentTypeOptions",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeader.swift",
-      "line": 188,
+      "line": 190,
       "symbol": "HTTPHeader.xFrameOptions",
       "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeaders.swift",
-      "line": 13,
-      "symbol": "HTTPHeaders.allHTTPHeaderFields",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeaders.swift",
-      "line": 19,
-      "symbol": "HTTPHeaders.replaceOrAdd(header:value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeaders.swift",
-      "line": 23,
-      "symbol": "HTTPHeaders.remove(header:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPHeaders.swift",
-      "line": 27,
-      "symbol": "HTTPHeaders.value(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 11,
-      "symbol": "HTTPMediaType.TypeIdentifier",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 12,
-      "symbol": "HTTPMediaType.TypeIdentifier.any",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 13,
-      "symbol": "HTTPMediaType.TypeIdentifier.application",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 14,
-      "symbol": "HTTPMediaType.TypeIdentifier.audio",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 15,
-      "symbol": "HTTPMediaType.TypeIdentifier.image",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 16,
-      "symbol": "HTTPMediaType.TypeIdentifier.message",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 17,
-      "symbol": "HTTPMediaType.TypeIdentifier.multipart",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 18,
-      "symbol": "HTTPMediaType.TypeIdentifier.text",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 19,
-      "symbol": "HTTPMediaType.TypeIdentifier.video",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 32,
-      "symbol": "HTTPMediaType.init(type:subType:parameters:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPMediaType.swift",
-      "line": 42,
-      "symbol": "HTTPMediaType.toString()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -1598,485 +1451,429 @@
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 7,
+      "line": 47,
       "symbol": "HTTPStatusCode.continue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 8,
+      "line": 48,
       "symbol": "HTTPStatusCode.switchingProtocols",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 9,
+      "line": 49,
       "symbol": "HTTPStatusCode.processing",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 10,
+      "line": 50,
       "symbol": "HTTPStatusCode.earlyHints",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 12,
+      "line": 52,
       "symbol": "HTTPStatusCode.ok",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 13,
+      "line": 53,
       "symbol": "HTTPStatusCode.created",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 14,
+      "line": 54,
       "symbol": "HTTPStatusCode.accepted",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 15,
+      "line": 55,
       "symbol": "HTTPStatusCode.nonAuthoritativeInformation",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 16,
+      "line": 56,
       "symbol": "HTTPStatusCode.noContent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 17,
+      "line": 57,
       "symbol": "HTTPStatusCode.resetContent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 18,
+      "line": 58,
       "symbol": "HTTPStatusCode.partialContent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 19,
+      "line": 59,
       "symbol": "HTTPStatusCode.multiStatus",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 20,
+      "line": 60,
       "symbol": "HTTPStatusCode.alreadyReported",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 21,
+      "line": 61,
       "symbol": "HTTPStatusCode.imUsed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 23,
+      "line": 63,
       "symbol": "HTTPStatusCode.multipleChoices",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 24,
+      "line": 64,
       "symbol": "HTTPStatusCode.movedPermanently",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 25,
+      "line": 65,
       "symbol": "HTTPStatusCode.found",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 26,
+      "line": 66,
       "symbol": "HTTPStatusCode.seeOther",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 27,
+      "line": 67,
       "symbol": "HTTPStatusCode.notModified",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 28,
+      "line": 68,
       "symbol": "HTTPStatusCode.useProxy",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 29,
+      "line": 69,
       "symbol": "HTTPStatusCode.temporaryRedirect",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 30,
+      "line": 70,
       "symbol": "HTTPStatusCode.permanentRedirect",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 32,
+      "line": 72,
       "symbol": "HTTPStatusCode.badRequest",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 33,
+      "line": 73,
       "symbol": "HTTPStatusCode.unauthorized",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 34,
+      "line": 74,
       "symbol": "HTTPStatusCode.paymentRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 35,
+      "line": 75,
       "symbol": "HTTPStatusCode.forbidden",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 36,
+      "line": 76,
       "symbol": "HTTPStatusCode.notFound",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 37,
+      "line": 77,
       "symbol": "HTTPStatusCode.methodNotAllowed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 38,
+      "line": 78,
       "symbol": "HTTPStatusCode.notAcceptable",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 39,
+      "line": 79,
       "symbol": "HTTPStatusCode.proxyAuthenticationRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 40,
+      "line": 80,
       "symbol": "HTTPStatusCode.requestTimeout",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 41,
+      "line": 81,
       "symbol": "HTTPStatusCode.conflict",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 42,
+      "line": 82,
       "symbol": "HTTPStatusCode.gone",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 43,
+      "line": 83,
       "symbol": "HTTPStatusCode.lengthRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 44,
+      "line": 84,
       "symbol": "HTTPStatusCode.preconditionFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 45,
+      "line": 85,
       "symbol": "HTTPStatusCode.payloadTooLarge",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 46,
+      "line": 86,
       "symbol": "HTTPStatusCode.uriTooLong",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 47,
+      "line": 87,
       "symbol": "HTTPStatusCode.unsupportedMediaType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 48,
+      "line": 88,
       "symbol": "HTTPStatusCode.rangeNotSatisfiable",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 49,
+      "line": 89,
       "symbol": "HTTPStatusCode.expectationFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 50,
+      "line": 90,
       "symbol": "HTTPStatusCode.misdirectedRequest",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 51,
+      "line": 91,
       "symbol": "HTTPStatusCode.unprocessableEntity",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 52,
+      "line": 92,
       "symbol": "HTTPStatusCode.locked",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 53,
+      "line": 93,
       "symbol": "HTTPStatusCode.failedDependency",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 54,
+      "line": 94,
       "symbol": "HTTPStatusCode.tooEarly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 55,
+      "line": 95,
       "symbol": "HTTPStatusCode.upgradeRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 56,
+      "line": 96,
       "symbol": "HTTPStatusCode.preconditionRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 57,
+      "line": 97,
       "symbol": "HTTPStatusCode.tooManyRequests",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 58,
+      "line": 98,
       "symbol": "HTTPStatusCode.requestHeaderFieldsTooLarge",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 59,
+      "line": 99,
       "symbol": "HTTPStatusCode.unavailableForLegalReasons",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 61,
+      "line": 101,
       "symbol": "HTTPStatusCode.internalServerError",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 62,
+      "line": 102,
       "symbol": "HTTPStatusCode.notImplemented",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 63,
+      "line": 103,
       "symbol": "HTTPStatusCode.badGateway",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 64,
+      "line": 104,
       "symbol": "HTTPStatusCode.serviceUnavailable",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 65,
+      "line": 105,
       "symbol": "HTTPStatusCode.gatewayTimeout",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 66,
+      "line": 106,
       "symbol": "HTTPStatusCode.httpVersionNotSupported",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 67,
+      "line": 107,
       "symbol": "HTTPStatusCode.variantAlsoNegotiates",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 68,
+      "line": 108,
       "symbol": "HTTPStatusCode.insufficientStorage",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 69,
+      "line": 109,
       "symbol": "HTTPStatusCode.loopDetected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 70,
+      "line": 110,
       "symbol": "HTTPStatusCode.notExtended",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 71,
+      "line": 111,
       "symbol": "HTTPStatusCode.networkAuthenticationRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 74,
-      "symbol": "HTTPStatusCodeCategory",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 75,
-      "symbol": "HTTPStatusCodeCategory.informational",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 76,
-      "symbol": "HTTPStatusCodeCategory.successful",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 77,
-      "symbol": "HTTPStatusCodeCategory.redirection",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 78,
-      "symbol": "HTTPStatusCodeCategory.clientError",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 79,
-      "symbol": "HTTPStatusCodeCategory.serverError",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 80,
-      "symbol": "HTTPStatusCodeCategory.unknown",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/danbrowne/Documents/Manuscripts Laptop/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 104,
-      "symbol": "HTTPStatusCode.category",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
