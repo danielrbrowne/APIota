@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>APIota  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="APIota  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          APIota Docs
+        </a>
+         (13% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/danielrbrowne/APIota">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdanielrbrowne.github.io%2FAPIota%2Fdocsets%2FAPIota.xml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">APIota Reference</a>
+      <img class="carat" src="img/carat.png" />
+      APIota  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/APIotaClientError.html">APIotaClientError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HTTPStatusCode.html">HTTPStatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HTTPStatusCodeCategory.html">HTTPStatusCodeCategory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/APIotaClient.html">APIotaClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/APIotaCodableEndpoint.html">APIotaCodableEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/APIotaURLEncodedFormEndpoint.html">APIotaURLEncodedFormEndpoint</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/HTTPHeader.html">HTTPHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/HTTPHeaders.html">HTTPHeaders</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/HTTPMediaType.html">HTTPMediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/HTTPMediaType/TypeIdentifier.html">– TypeIdentifier</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <p><img src="https://raw.githubusercontent.com/danielrbrowne/APIota/master/apiota_logo.png" alt="APIota"></p>
+<h1 id='apiota' class='heading'>APIota</h1>
+
+<p>APIota is a lightweight Swift library for defining API clients for use in iOS and macOS apps. It is written using a protocol-oriented approach, and allows your <code>Codable</code> model objects to be decoded from JSON REST API endpoints really easily!</p>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#reporting-bugs-and-requesting-features">Reporting Bugs and Requesting Features</a></li>
+<li><a href="#feature-roadmap">Feature Roadmap</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] JSON request and response body encoding and decoding support when using model objects conforming to <code>Codable</code>.</li>
+<li>[x] <a href="https://developer.apple.com/documentation/combine">Combine</a> support (when building against iOS 13.0+ or macOS 10.15+).</li>
+<li>[x] URL-encoded form data request support.</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='using-swift-package-manager' class='heading'>Using Swift Package Manager</h3>
+
+<p>Simply add the following to the <code>dependencies</code> array in your <code>Package.swift</code> file:</p>
+<pre class="highlight plaintext"><code>dependencies: [
+    …
+    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.1.0"),
+    …
+  ]
+</code></pre>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>At its core, defining API clients using APIota is very straightforward. There are two protocols, <code><a href="Protocols/APIotaClient.html">APIotaClient</a></code> and <code><a href="Protocols/APIotaCodableEndpoint.html">APIotaCodableEndpoint</a></code> which form the foundations of the library.</p>
+
+<p>The first step is to define an object specifying the base URL (i.e. the <code>host</code> in terms of an instance of <code>URLComponents</code>) for the REST API with which you are going to communicate with. An example is shown below:</p>
+<pre class="highlight plaintext"><code>struct JSONPlaceholderAPIClient: APIotaClient {
+
+    let session = URLSession.shared
+
+    let decoder = JSONDecoder()
+
+    var baseUrlComponents: URLComponents = {
+        var components = URLComponents()
+        components.host = "jsonplaceholder.typicode.com"
+        components.scheme = "https"
+
+        return components
+    }()
+}
+
+</code></pre>
+
+<p>The next step is to define the endpoint that the requests should be sent to. An example of a simple GET request is shown below, however more complex requests can also be defined easily:</p>
+<pre class="highlight plaintext"><code>struct JSONPlaceholderGetTodosEndpoint: APIotaCodableEndpoint {
+    typealias Response = [Todo]
+    typealias Body = String
+
+    let headers: HTTPHeaders? = nil
+
+    let httpBody: Body? = nil
+
+    let httpMethod: HTTPMethod = .GET
+
+    let path = "/todos"
+
+    let queryItems: [URLQueryItem]? = nil
+}
+</code></pre>
+
+<p>Requests can then be sent to REST API via an instance of the Client as follows:</p>
+<pre class="highlight plaintext"><code>…
+private static let apiClient = TestAPIClient()
+private(set) lazy var cancellable: AnyCancellable? = nil
+private var todosList: [Todo] = []
+…
+
+// Example 1: API response returned via a callback closure
+
+let endpoint = JSONPlaceholderGetTodosEndpoint()
+Self.apiClient.sendRequest(for: endpoint) { result in
+    // Handle the returned `Result&lt;T.Response, Error&gt;`
+    switch result {
+    case .success(let todosList):
+        self.todosList = todosList
+    case .failure(let error):
+        // Handle the error returned from the API Client
+    }
+}
+
+// Example 2: API response returned via a Combine publisher
+
+let endpoint = JSONPlaceholderGetTodosEndpoint()
+cancellable = Self.apiClient.sendRequest(for: endpoint)
+    .catch({ error in
+        // Handle the error returned from the API Client
+    })
+    .assign(to: \.todosList, on: self)
+}
+
+</code></pre>
+
+<p>A practical example of APIota in action can be found in the <a href="./Example/APIotaExample/">Example Project</a>.</p>
+<h2 id='reporting-bugs-and-requesting-features' class='heading'>Reporting Bugs and Requesting Features</h2>
+
+<p>Please ensure you use the relevant issue template when reporting a bug or requesting a new feature. Also please check first to see if there is an open issue that already covers your bug report or new feature request.</p>
+<h2 id='feature-roadmap' class='heading'>Feature Roadmap</h2>
+
+<p>In no particular order, and as a draft proposal:</p>
+
+<ul>
+<li>[ ] Customizable JSON encoding strategies for requests.</li>
+<li>[ ] Automatic <code>Content-Type</code> header inference for requests.</li>
+<li>[ ] Customizable request parameter encoding strategies.</li>
+<li>[ ] Configurable response caching for requests.</li>
+<li>[ ] Multipart form data support.</li>
+<li>[ ] Configurable request retrying.</li>
+<li>[ ] Request authentication challenge handling.</li>
+<li>[ ] Comprehensive test coverage.</li>
+<li>[ ] Cocoapods support.</li>
+</ul>
+<h2 id='license' class='heading'>License</h2>
+
+<p>APIota is completely open source and released under the MIT license. See <a href="https://github.com/danielrbrowne/APIota/blob/master/LICENSE.md">LICENSE.md</a> for details if you want to use it in your own project(s).</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://github.com/danielrbrowne" target="_blank" rel="external">Daniel Ryan Browne</a>. All rights reserved. (Last updated: 2020-07-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

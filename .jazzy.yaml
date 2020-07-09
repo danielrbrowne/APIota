@@ -1,0 +1,7 @@
+author: Daniel Ryan Browne
+author_url: https://github.com/danielrbrowne
+github_url: https://github.com/danielrbrowne/APIota
+root_url: https://danielrbrowne.github.io/APIota/
+module: APIota
+output: docs
+theme: fullwidth
