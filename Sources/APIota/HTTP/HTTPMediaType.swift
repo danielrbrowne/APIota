@@ -81,7 +81,7 @@ public struct HTTPMediaType {
 
 // MARK: - Default media type values
 
-extension HTTPMediaType {
+public extension HTTPMediaType {
 
     // UTF-8 charset
 
