@@ -8,7 +8,7 @@ public struct HTTPHeader {
 
     // MARK: Internal variables
 
-    internal let stringValue: String
+    let stringValue: String
 
     // MARK: - Initialization
 
