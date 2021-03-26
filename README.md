@@ -14,8 +14,8 @@ APIota is a lightweight Swift library for defining API clients for use in iOS an
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Reporting Bugs and Requesting Features](#reporting-bugs-and-requesting-features)
-- [Feature Roadmap](#feature-roadmap)
+- [Reporting bugs and requesting features](#reporting-bugs-and-requesting-features)
+- [Feature roadmap](#feature-roadmap)
 - [License](#license)
 
 ## Supported platforms
@@ -134,11 +134,11 @@ Full documentation of APIota can be found in the [API docs](https://danielrbrown
 
 A practical example of APIota in action can be found in the [Example Project](./Example/APIotaExample/).
 
-## Reporting Bugs and Requesting Features
+## Reporting bugs and requesting features
 
 Please ensure you use the relevant issue template when reporting a bug or requesting a new feature. Also please check first to see if there is an open issue that already covers your bug report or new feature request.
 
-## Feature Roadmap
+## Feature roadmap
 
 In no particular order, and as a draft proposal:
 
