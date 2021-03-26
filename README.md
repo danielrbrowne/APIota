@@ -28,7 +28,6 @@ APIota is a lightweight Swift library for defining API clients for use in iOS an
 - iOS 13.0
 - macOS 10.15
 - tvOS 13.0
-- watchOS 6.0
 
 ## Features
 
