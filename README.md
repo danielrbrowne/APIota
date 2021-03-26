@@ -46,7 +46,7 @@ Simply add the following to the `dependencies` array in your `Package.swift` fil
 ```swift
 dependencies: [
     …
-    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.1.0"),
+    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.1.3"),
     …
   ]
 ```
