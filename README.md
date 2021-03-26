@@ -5,17 +5,30 @@
 [![CI Status](https://github.com/danielrbrowne/APIota/workflows/APIota%20CI/badge.svg)](https://github.com/danielrbrowne/APIota/actions)
 [![Latest Release](https://img.shields.io/github/v/release/danielrbrowne/APIota)](https://github.com/danielrbrowne/APIota/releases)
 [![API Docs](https://img.shields.io/badge/Docs-here!-lightgrey)](https://danielrbrowne.github.io/APIota/)
-[![Supported Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS-yellow)](https://github.com/danielrbrowne/APIota/blob/master/Package.swift)
+[![Supported Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow)](https://github.com/danielrbrowne/APIota/blob/master/Package.swift)
 [![LICENSE](https://img.shields.io/github/license/danielrbrowne/APIota)](https://github.com/danielrbrowne/APIota/blob/master/LICENSE.md)
 
 APIota is a lightweight Swift library for defining API clients for use in iOS and macOS apps. It is written using a protocol-oriented approach, and allows your `Codable` model objects to be decoded from JSON REST API endpoints really easily!
 
+- [Supported platforms](#supported-platforms)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Reporting Bugs and Requesting Features](#reporting-bugs-and-requesting-features)
-- [Feature Roadmap](#feature-roadmap)
+- [Reporting bugs and requesting features](#reporting-bugs-and-requesting-features)
+- [Feature roadmap](#feature-roadmap)
 - [License](#license)
+
+## Supported platforms
+
+- Swift 5.1 or higher
+- Xcode 11.0 or higer
+
+### Minimum deployment targets
+
+- iOS 13.0
+- macOS 10.15
+- tvOS 13.0
+- watchOS 6.0
 
 ## Features
 
@@ -33,7 +46,7 @@ Simply add the following to the `dependencies` array in your `Package.swift` fil
 ```swift
 dependencies: [
     …
-    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.1.0"),
+    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.1.3"),
     …
   ]
 ```
@@ -121,11 +134,11 @@ Full documentation of APIota can be found in the [API docs](https://danielrbrown
 
 A practical example of APIota in action can be found in the [Example Project](./Example/APIotaExample/).
 
-## Reporting Bugs and Requesting Features
+## Reporting bugs and requesting features
 
 Please ensure you use the relevant issue template when reporting a bug or requesting a new feature. Also please check first to see if there is an open issue that already covers your bug report or new feature request.
 
-## Feature Roadmap
+## Feature roadmap
 
 In no particular order, and as a draft proposal:
 
