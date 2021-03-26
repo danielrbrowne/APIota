@@ -5,9 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "APIota",
-    platforms: [.iOS("13.0"),
-                .macOS("10.15"),
-                .tvOS("13.0")],
+    platforms: [.iOS(.v13),
+                .macOS(.v10_15),
+                .tvOS(.v13)],
     products: [
         .library(
             name: "APIota",
