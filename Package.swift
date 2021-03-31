@@ -8,16 +8,19 @@ let package = Package(
     products: [
         .library(
             name: "APIota",
-            targets: ["APIota"]),
+            targets: ["APIota"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/realm/SwiftLint",
+                         .upToNextMajor(from: "0.43.1"))
+    ],
     targets: [
         .target(
             name: "APIota",
             dependencies: []),
         .testTarget(
             name: "APIotaTests",
-            dependencies: ["APIota"]),
+            dependencies: ["APIota"])
     ],
     swiftLanguageVersions: [.v5]
 )

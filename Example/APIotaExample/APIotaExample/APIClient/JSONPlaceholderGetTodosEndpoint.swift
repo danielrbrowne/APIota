@@ -6,13 +6,15 @@
 //  Copyright © 2020 Daniel Browne. All rights reserved.
 //
 
-import Foundation
 import APIota
+import Foundation
 
 struct JSONPlaceholderGetTodosEndpoint: APIotaCodableEndpoint {
 
     typealias Response = [Todo]
     typealias Body = String
+
+    let encoder: JSONEncoder = JSONEncoder()
 
     let headers: HTTPHeaders? = nil
 

@@ -1,5 +1,5 @@
-import Foundation
 @testable import APIota
+import Foundation
 
 struct TestAPIClient: APIotaClient {
 

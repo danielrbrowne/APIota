@@ -41,27 +41,27 @@ public protocol APIotaCodableEndpoint {
 // MARK: - Default method implementations
 
 public extension APIotaCodableEndpoint {
-    
+
     func request(baseUrlComponents: URLComponents) throws -> URLRequest {
-        
+
         var requestUrlComponents = baseUrlComponents
         requestUrlComponents.path = path
         requestUrlComponents.queryItems = queryItems
-        
+
         guard let requestUrl = requestUrlComponents.url else {
             throw APIotaClientError.clientSide
         }
-        
+
         var request = URLRequest(url: requestUrl)
         request.httpMethod = httpMethod.rawValue
         if let httpBody = httpBody, let bodyData = try? encoder.encode(httpBody) {
             request.httpBody = bodyData
         }
-        
+
         if let headers = headers {
             request.allHTTPHeaderFields = headers.allHTTPHeaderFields
         }
-        
+
         return request
     }
 }

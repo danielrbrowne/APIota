@@ -4,6 +4,8 @@ import Combine
 #endif
 @testable import APIota
 
+// swiftlint:disable type_body_length multiple_closures_with_trailing_closure
+
 final class APIotaCRUDRequestsTests: XCTestCase {
 
     // MARK: - Private constants
@@ -15,7 +17,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
     #if canImport(Combine)
 
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-    private(set) lazy var cancellable: AnyCancellable? = nil
+    private lazy var cancellable: AnyCancellable? = nil
 
     #endif
 
@@ -35,6 +37,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
                                     expectedUserId: 1,
                                     expectedTitle: "delectus aut autem",
                                     expectedCompleted: false)
+
             case .failure(let error):
                 XCTFail("\(expectation.expectationDescription) request should not fail! - failed with: \(error)")
             }
@@ -64,7 +67,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
                                     expectedCompleted: false)
 
                 expectation.fulfill()
-        }
+            }
 
         wait(for: [expectation], timeout: 10.0)
     }
@@ -84,6 +87,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
                 XCTAssertEqual(emptyTodo.userId, nil)
                 XCTAssertEqual(emptyTodo.title, nil)
                 XCTAssertEqual(emptyTodo.completed, nil)
+
             case .failure(let error):
                 XCTFail("\(expectation.expectationDescription) request should not fail! - failed with: \(error)")
             }
@@ -111,7 +115,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
                 XCTAssertEqual(emptyTodo.title, nil)
                 XCTAssertEqual(emptyTodo.completed, nil)
                 expectation.fulfill()
-        }
+            }
 
         wait(for: [expectation], timeout: 10.0)
     }
@@ -137,6 +141,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
                                 expectedUserId: expectedUserId,
                                 expectedTitle: todoTitle,
                                 expectedCompleted: expectedCompletedStatus)
+
             case .failure(let error):
                 XCTFail("\(expectation.expectationDescription) request should not fail - failed with error: \(error)")
             }
@@ -196,6 +201,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
                                 expectedUserId: userId,
                                 expectedTitle: todoTitle,
                                 expectedCompleted: completedStatus)
+
             case .failure(let error):
                 XCTFail("\(expectation.expectationDescription) request should not fail - failed with error: \(error)")
             }
@@ -258,6 +264,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
                                 expectedUserId: userId,
                                 expectedTitle: todoTitle,
                                 expectedCompleted: completedStatus)
+
             case .failure(let error):
                 XCTFail("\(expectation.expectationDescription) request should not fail - failed with error: \(error)")
             }
@@ -303,6 +310,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
     // MARK: - Private methods
 
+    // swiftlint:disable:next function_parameter_count
     private func verifyTodoList(_ todoList: [Todo],
                                 expectedCount: Int,
                                 expectedId: Int,
@@ -335,6 +343,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         switch completion {
         case .finished:
             break
+
         case .failure(let error):
             XCTFail("\(expectation.expectationDescription) request should not fail! - failed with: \(error)")
         }

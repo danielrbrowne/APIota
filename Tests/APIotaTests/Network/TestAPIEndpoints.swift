@@ -1,5 +1,5 @@
-import Foundation
 @testable import APIota
+import Foundation
 
 struct TestTodosGetEndpoint: APIotaCodableEndpoint {
     typealias Response = [Todo]

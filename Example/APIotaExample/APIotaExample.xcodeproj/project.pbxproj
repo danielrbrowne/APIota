@@ -13,13 +13,13 @@
 		5330E5AE24B35BAA008EEF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5330E5AD24B35BAA008EEF75 /* Assets.xcassets */; };
 		5330E5B124B35BAA008EEF75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5330E5B024B35BAA008EEF75 /* Preview Assets.xcassets */; };
 		5330E5B424B35BAA008EEF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5330E5B224B35BAA008EEF75 /* LaunchScreen.storyboard */; };
-		5330E5BD24B35BE8008EEF75 /* APIota in Frameworks */ = {isa = PBXBuildFile; productRef = 5330E5BC24B35BE8008EEF75 /* APIota */; };
 		5330E5C024B35CBF008EEF75 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5BF24B35CBF008EEF75 /* Todo.swift */; };
 		5330E5C324B35CEA008EEF75 /* JSONPlaceholdeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5C224B35CEA008EEF75 /* JSONPlaceholdeAPIClient.swift */; };
 		5330E5C524B35D02008EEF75 /* JSONPlaceholderGetTodosEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5C424B35D02008EEF75 /* JSONPlaceholderGetTodosEndpoint.swift */; };
 		5330E5C824B36B5F008EEF75 /* TodosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5C724B36B5F008EEF75 /* TodosListViewModel.swift */; };
 		5330E5CB24B36CBE008EEF75 /* TodosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5CA24B36CBE008EEF75 /* TodosListView.swift */; };
 		5330E5CD24B36CDF008EEF75 /* TodoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330E5CC24B36CDF008EEF75 /* TodoDetailsView.swift */; };
+		57FD37252614BF0E007C5117 /* APIota in Frameworks */ = {isa = PBXBuildFile; productRef = 57FD37242614BF0E007C5117 /* APIota */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5330E5BD24B35BE8008EEF75 /* APIota in Frameworks */,
+				57FD37252614BF0E007C5117 /* APIota in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +144,7 @@
 			);
 			name = APIotaExample;
 			packageProductDependencies = (
-				5330E5BC24B35BE8008EEF75 /* APIota */,
+				57FD37242614BF0E007C5117 /* APIota */,
 			);
 			productName = APIotaExample;
 			productReference = 5330E5A424B35BA7008EEF75 /* APIotaExample.app */;
@@ -175,7 +175,7 @@
 			);
 			mainGroup = 5330E59B24B35BA6008EEF75;
 			packageReferences = (
-				5330E5BB24B35BE8008EEF75 /* XCRemoteSwiftPackageReference "APIota" */,
+				57FD37232614BF0E007C5117 /* XCRemoteSwiftPackageReference "APIota" */,
 			);
 			productRefGroup = 5330E5A524B35BA7008EEF75 /* Products */;
 			projectDirPath = "";
@@ -408,20 +408,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5330E5BB24B35BE8008EEF75 /* XCRemoteSwiftPackageReference "APIota" */ = {
+		57FD37232614BF0E007C5117 /* XCRemoteSwiftPackageReference "APIota" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:danielrbrowne/APIota.git";
+			repositoryURL = "https://github.com/danielrbrowne/APIota";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.1;
+				minimumVersion = 0.1.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5330E5BC24B35BE8008EEF75 /* APIota */ = {
+		57FD37242614BF0E007C5117 /* APIota */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5330E5BB24B35BE8008EEF75 /* XCRemoteSwiftPackageReference "APIota" */;
+			package = 57FD37232614BF0E007C5117 /* XCRemoteSwiftPackageReference "APIota" */;
 			productName = APIota;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+// swiftlint:disable multiple_closures_with_trailing_closure
+
 struct ContentView: View {
     // View-model is observed for changes to its state via SwiftUI
     @ObservedObject private var viewModel: TodosListViewModel = TodosListViewModel()
@@ -20,7 +22,7 @@ struct ContentView: View {
                     trailing: Button(
                         action: {
                             self.viewModel.updateTodosList()
-                    }
+                        }
                     ) {
                         Text("Refresh")
                     }
@@ -29,8 +31,9 @@ struct ContentView: View {
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
             .alert(isPresented: $viewModel.apiErrorResponse.showAlert) {
                 Alert(title: Text("Error"),
+                      // swiftlint:disable:next line_length
                       message: Text(viewModel.apiErrorResponse.error?.localizedDescription ?? "An error has occured. Please try again later."))
-        }
+            }
     }
 }
 

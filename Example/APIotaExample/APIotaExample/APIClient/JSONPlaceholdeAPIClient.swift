@@ -6,8 +6,8 @@
 //  Copyright © 2020 Daniel Browne. All rights reserved.
 //
 
-import Foundation
 import APIota
+import Foundation
 
 struct JSONPlaceholdeAPIClient: APIotaClient {
 
