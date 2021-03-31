@@ -197,5 +197,4 @@ extension HTTPHeader: Hashable {
     public func hash(into hasher: inout Hasher) {
         self.stringValue.hash(into: &hasher)
     }
-
 }

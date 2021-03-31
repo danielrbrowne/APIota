@@ -20,7 +20,7 @@ struct ContentView: View {
                     trailing: Button(
                         action: {
                             self.viewModel.updateTodosList()
-                    }
+                        }
                     ) {
                         Text("Refresh")
                     }
@@ -30,7 +30,7 @@ struct ContentView: View {
             .alert(isPresented: $viewModel.apiErrorResponse.showAlert) {
                 Alert(title: Text("Error"),
                       message: Text(viewModel.apiErrorResponse.error?.localizedDescription ?? "An error has occured. Please try again later."))
-        }
+            }
     }
 }
 

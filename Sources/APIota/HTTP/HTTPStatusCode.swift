@@ -30,14 +30,19 @@ public enum HTTPStatusCode: Int {
             switch rawValue {
             case 100...199:
                 self = .informational
+
             case 200...299:
                 self = .successful
+
             case 300...399:
                 self = .redirection
+
             case 400...499:
                 self = .clientError
+
             case 500...599:
                 self = .serverError
+
             default:
                 self = .unknown
             }

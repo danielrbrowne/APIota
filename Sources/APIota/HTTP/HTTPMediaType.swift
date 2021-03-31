@@ -186,7 +186,7 @@ extension HTTPMediaType: Equatable {
         if lhs.type == .any && rhs.type == .any {
             return true
         }
-        
+
         if lhs.type != rhs.type {
             return false
         }

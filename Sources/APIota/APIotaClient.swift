@@ -40,7 +40,7 @@ public protocol APIotaClient {
 // MARK: - Default method implementations
 
 public extension APIotaClient {
-    
+
     func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T,
                                                callback: @escaping (Result<T.Response, Error>) -> Void) {
 
@@ -50,19 +50,19 @@ public extension APIotaClient {
         } catch {
             callback(.failure(error))
         }
-        
-        let dataTask = session.dataTask(with: request) { (data, response, error) in
+
+        let dataTask = session.dataTask(with: request) { data, response, error in
             guard let httpResponse = response as? HTTPURLResponse,
                 let statusCode = HTTPStatusCode(rawValue: httpResponse.statusCode) else {
                     callback(.failure(APIotaClientError.unexpectedResponse))
                     return
             }
-            
+
             guard statusCode.category == .successful else {
                 callback(.failure(APIotaClientError.failedResponse(statusCode: statusCode)))
                 return
             }
-            
+
             do {
                 callback(.success(try self.decoder.decode(T.Response.self, from: data!)))
             } catch {
@@ -70,7 +70,7 @@ public extension APIotaClient {
                 return
             }
         }
-        
+
         // Resume (a.k.a start) data task before exiting scope
         dataTask.resume()
     }
@@ -99,7 +99,7 @@ public extension APIotaClient {
                 }
 
                 return result.data
-        }
+            }
         .decode(type: T.Response.self, decoder: decoder)
         .receive(on: DispatchQueue.main)
         .eraseToAnyPublisher()
