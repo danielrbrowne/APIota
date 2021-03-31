@@ -4,6 +4,8 @@ import Combine
 #endif
 @testable import APIota
 
+// swiftlint:disable type_body_length multiple_closures_with_trailing_closure
+
 final class APIotaCRUDRequestsTests: XCTestCase {
 
     // MARK: - Private constants
@@ -15,7 +17,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
     #if canImport(Combine)
 
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-    private private(set) lazy var cancellable: AnyCancellable? = nil
+    private lazy var cancellable: AnyCancellable? = nil
 
     #endif
 
@@ -308,6 +310,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
     // MARK: - Private methods
 
+    // swiftlint:disable:next function_parameter_count
     private func verifyTodoList(_ todoList: [Todo],
                                 expectedCount: Int,
                                 expectedId: Int,

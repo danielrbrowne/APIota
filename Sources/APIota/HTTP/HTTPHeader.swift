@@ -91,7 +91,9 @@ public struct HTTPHeader {
     public static let hobareg = HTTPHeader("Hobareg")
     public static let host = HTTPHeader("Host")
     public static let http2Settings = HTTPHeader("HTTP2-Settings")
+    // swiftlint:disable:next identifier_name
     public static let im = HTTPHeader("IM")
+    // swiftlint:disable:next identifier_name
     public static let `if` = HTTPHeader("If")
     public static let ifMatch = HTTPHeader("If-Match")
     public static let ifModifiedSince = HTTPHeader("If-Modified-Since")
@@ -170,6 +172,7 @@ public struct HTTPHeader {
     public static let surrogateCapability = HTTPHeader("Surrogate-Capability")
     public static let surrogateControl = HTTPHeader("Surrogate-Control")
     public static let tcn = HTTPHeader("TCN")
+    // swiftlint:disable:next identifier_name
     public static let te = HTTPHeader("TE")
     public static let timeout = HTTPHeader("Timeout")
     public static let topic = HTTPHeader("Topic")

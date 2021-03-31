@@ -2,7 +2,8 @@ import Foundation
 
 /// Describes all valid HTTP status codes.
 ///
-/// Valid HTTP status codes referenced from: https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml#http-status-codes-1
+/// Valid HTTP status codes referenced from:
+/// https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml#http-status-codes-1
 public enum HTTPStatusCode: Int {
 
     /// The category of a `HTTPStatus` code.
@@ -54,6 +55,7 @@ public enum HTTPStatusCode: Int {
     case processing = 102
     case earlyHints = 103
 
+    // swiftlint:disable:next identifier_name
     case ok = 200
     case created = 201
     case accepted = 202
