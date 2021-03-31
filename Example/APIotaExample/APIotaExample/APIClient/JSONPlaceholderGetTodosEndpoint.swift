@@ -14,6 +14,8 @@ struct JSONPlaceholderGetTodosEndpoint: APIotaCodableEndpoint {
     typealias Response = [Todo]
     typealias Body = String
 
+    let encoder: JSONEncoder = JSONEncoder()
+
     let headers: HTTPHeaders? = nil
 
     let httpBody: Body? = nil
