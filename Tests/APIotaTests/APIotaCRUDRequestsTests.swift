@@ -12,7 +12,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
     // MARK: - Private variables
 
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     private(set) lazy var cancellable: AnyCancellable? = nil
 
     // MARK: - Test methods
@@ -40,7 +40,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testGETPublisher() {
 
         let endpoint = TestTodosGetEndpoint()
@@ -85,7 +85,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testDELETEPublisher() {
 
         let todoId = 98
@@ -134,7 +134,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testPATCHPublisher() {
 
         let todoTitle = "PATCHed TODO"
@@ -189,7 +189,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testPOSTPublisher() {
 
         let todoTitle = "POSTed TODO"
@@ -247,7 +247,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testPUTPublisher() {
 
         let todoTitle = "PUTed TODO"
@@ -303,7 +303,7 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         XCTAssertEqual(todo.completed, expectedCompleted)
     }
 
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     private func verifyPublisherCompletion(_ completion: Subscribers.Completion<Error>,
                                            expectation: XCTestExpectation) {
         switch completion {
