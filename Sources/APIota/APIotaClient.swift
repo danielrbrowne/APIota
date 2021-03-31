@@ -1,5 +1,7 @@
 import Foundation
+#if canImport(Combine)
 import Combine
+#endif
 
 /// Defines an API Client.
 ///
@@ -24,11 +26,15 @@ public protocol APIotaClient {
     func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T,
                                                callback: @escaping (Result<T.Response, Error>) -> Void)
 
+    #if canImport(Combine)
+
     /// Send a `URLRequest` to the specified REST API, returning a response via a Combine `AnyPublisher`.
     /// - Parameter endpoint: An `APIotaCodableEndpoint` defining the format of the `URLRequest` to be sent.
     /// - Returns: An `AnyPublisher` which can be integrated with SwiftUI or Combine code paths.
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T) -> AnyPublisher<T.Response, Error>
+
+    #endif
 }
 
 // MARK: - Default method implementations
@@ -69,7 +75,9 @@ public extension APIotaClient {
         dataTask.resume()
     }
 
-    @available(iOS 13.0, macOS 10.15, *)
+    #if canImport(Combine)
+
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func sendRequest<T: APIotaCodableEndpoint>(for endpoint: T) -> AnyPublisher<T.Response, Error> {
 
         var request: URLRequest!
@@ -96,4 +104,6 @@ public extension APIotaClient {
         .receive(on: DispatchQueue.main)
         .eraseToAnyPublisher()
     }
+
+    #endif
 }
