@@ -7,7 +7,9 @@
 //
 
 import Foundation
+#if canImport(Combine)
 import Combine
+#endif
 import APIota
 
 class TodosListViewModel: ObservableObject {

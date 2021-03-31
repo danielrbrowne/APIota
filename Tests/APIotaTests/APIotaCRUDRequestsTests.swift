@@ -1,5 +1,7 @@
 import XCTest
+#if canImport(Combine)
 import Combine
+#endif
 @testable import APIota
 
 final class APIotaCRUDRequestsTests: XCTestCase {
