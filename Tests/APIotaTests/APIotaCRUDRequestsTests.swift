@@ -12,8 +12,12 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
     // MARK: - Private variables
 
+    #if canImport(Combine)
+
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     private(set) lazy var cancellable: AnyCancellable? = nil
+
+    #endif
 
     // MARK: - Test methods
 
@@ -40,6 +44,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    #if canImport(Combine)
+
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testGETPublisher() {
 
@@ -63,6 +69,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    #endif
+
     func testDELETE() {
 
         let todoId = 98
@@ -85,6 +93,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    #if canImport(Combine)
+
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testDELETEPublisher() {
 
@@ -105,6 +115,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
         wait(for: [expectation], timeout: 10.0)
     }
+
+    #endif
 
     func testPATCH() {
 
@@ -134,6 +146,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    #if canImport(Combine)
+
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testPATCHPublisher() {
 
@@ -160,6 +174,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
         wait(for: [expectation], timeout: 10.0)
     }
+
+    #endif
 
     func testPOST() {
 
@@ -189,6 +205,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    #if canImport(Combine)
+
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testPOSTPublisher() {
 
@@ -215,6 +233,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
         wait(for: [expectation], timeout: 10.0)
     }
+
+    #endif
 
     func testPUT() {
 
@@ -247,6 +267,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    #if canImport(Combine)
+
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     func testPUTPublisher() {
 
@@ -277,6 +299,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    #endif
+
     // MARK: - Private methods
 
     private func verifyTodoList(_ todoList: [Todo],
@@ -303,6 +327,8 @@ final class APIotaCRUDRequestsTests: XCTestCase {
         XCTAssertEqual(todo.completed, expectedCompleted)
     }
 
+    #if canImport(Combine)
+
     @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
     private func verifyPublisherCompletion(_ completion: Subscribers.Completion<Error>,
                                            expectation: XCTestExpectation) {
@@ -315,4 +341,6 @@ final class APIotaCRUDRequestsTests: XCTestCase {
 
         expectation.fulfill()
     }
+
+    #endif
 }
