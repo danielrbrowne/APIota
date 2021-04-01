@@ -52,6 +52,16 @@ public extension APIotaClient {
         }
 
         let dataTask = session.dataTask(with: request) { data, response, error in
+
+            guard error == nil else {
+                defer {
+                    session.invalidateAndCancel()
+                }
+                callback(.failure(error!))
+
+                return
+            }
+
             guard let httpResponse = response as? HTTPURLResponse,
                   let statusCode = HTTPStatusCode(rawValue: httpResponse.statusCode) else {
                 callback(.failure(APIotaClientError<T.ErrorResponse>.unexpectedResponse))
