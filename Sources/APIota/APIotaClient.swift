@@ -60,7 +60,7 @@ public extension APIotaClient {
                 defer {
                     session.invalidateAndCancel()
                 }
-                callback(.failure(error!))
+                callback(.failure(APIotaClientError<T.ErrorResponse>.internalError(error!)))
 
                 return
             }
