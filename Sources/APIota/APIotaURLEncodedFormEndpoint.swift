@@ -37,7 +37,7 @@ public extension APIotaURLEncodedFormEndpoint {
         requestUrlComponents.queryItems = queryItems
 
         guard let requestUrl = requestUrlComponents.url else {
-            throw APIotaClientError.clientSide
+            throw APIotaClientError<ErrorResponse>.clientSide
         }
 
         var request = URLRequest(url: requestUrl)
