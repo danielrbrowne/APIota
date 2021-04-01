@@ -5,11 +5,26 @@ import Foundation
 /// The `ErrorResponse` type should match the associated type
 /// from an `APIotaCodableEndpoint` type.
 public enum APIotaClientError<ErrorResponse: Decodable>: LocalizedError {
+
     /// The `URLRequest` could not be initialized with a valid `URL`.
     case clientSide
 
-    /// The server returned a failed response indicated by a non successful `HTTPStatusCode`.
+    /// The response body could not be decoded to the specified type.
+    case decodingError(_ error: DecodingError)
+
+    /// The request body could not be encoded to the specified type.
+    case encodingError(_ error: EncodingError)
+
+    /// The server returned a failed response indicated by a non-successful `HTTPStatusCode`.
+    ///
+    /// If the `errorResponseBody` cannot be decoded to the `ErrorResponse` type,
+    /// the raw response body `Data` will be returned (or empty `Data` if there was no response body).
     case failedResponse(statusCode: HTTPStatusCode, errorResponseBody: ErrorResponse)
+
+    /// An internal error occured.
+    ///
+    /// When the circumstances that caused the error cannot be determined, an `internalError` will be thrown.
+    case internalError(_ error: Error)
 
     /// The server returned a response that was not a `HTTPURLResponse`.
     case unexpectedResponse
@@ -21,9 +36,21 @@ public enum APIotaClientError<ErrorResponse: Decodable>: LocalizedError {
             return NSLocalizedString("The URLRequest was not initialized with a valid URL.",
                                      comment: "'clientSide' API Client error text")
 
+        case .decodingError(let error):
+            return NSLocalizedString("Decoding the response body failed with error: \(error)",
+                                     comment: "'.decodingError(…)' API Client error text")
+
+        case .encodingError(let error):
+            return NSLocalizedString("Encoding the response body failed with error: \(error)",
+                                     comment: "'.encodingError(…)' API Client error text")
+
         case .failedResponse(statusCode: let code, errorResponseBody: let body):
             return NSLocalizedString("The response failed with HTTP status code: \(code) and response body: \(body)",
                                      comment: "'failedResponse' API Client error text")
+
+        case .internalError(let error):
+            return NSLocalizedString("The request failed with error: \(error)",
+                                     comment: "'internalError' API Client error text")
 
         case .unexpectedResponse:
             return NSLocalizedString("The response was of an unexpected format.",

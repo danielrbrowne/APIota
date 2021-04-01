@@ -60,8 +60,16 @@ public extension APIotaCodableEndpoint {
 
         var request = URLRequest(url: requestUrl)
         request.httpMethod = httpMethod.rawValue
-        if let httpBody = httpBody, let bodyData = try? encoder.encode(httpBody) {
-            request.httpBody = bodyData
+
+        if let httpBody = httpBody {
+            do {
+                let bodyData = try encoder.encode(httpBody)
+                request.httpBody = bodyData
+            } catch let error as EncodingError {
+                throw APIotaClientError<ErrorResponse>.encodingError(error)
+            } catch {
+                throw APIotaClientError<ErrorResponse>.internalError(error)
+            }
         }
 
         if let headers = headers {

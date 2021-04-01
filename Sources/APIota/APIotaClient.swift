@@ -60,7 +60,7 @@ public extension APIotaClient {
                 defer {
                     session.invalidateAndCancel()
                 }
-                callback(.failure(error!))
+                callback(.failure(APIotaClientError<T.ErrorResponse>.internalError(error!)))
 
                 return
             }
@@ -96,9 +96,11 @@ public extension APIotaClient {
 
             do {
                 callback(.success(try self.decoder.decode(T.SuccessResponse.self, from: data!)))
-            } catch {
-                callback(.failure(error))
+            } catch let error as DecodingError {
+                callback(.failure(APIotaClientError<T.ErrorResponse>.decodingError(error)))
                 return
+            } catch {
+                callback(.failure(APIotaClientError<T.ErrorResponse>.internalError(error)))
             }
         }
 
