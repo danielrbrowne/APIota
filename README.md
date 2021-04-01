@@ -21,8 +21,19 @@ APIota is a lightweight Swift library for defining API clients for use in iOS an
 
 ## Supported platforms
 
+- iOS
+- macOS
+- tvOS
+- watchOS * (see note below)
+- Linux
+
+**NOTE:**
+- watchOS support is available as a user of the APIota library. However, building directly from source fails currently due to `XCTest` not being available on watchOS.
+
+### Supported Swift language versions and build tools
+
 - Swift 5.1 or higher
-- Xcode 11.0 or higer
+- Xcode 11.0 or higher
 
 ## Features
 
