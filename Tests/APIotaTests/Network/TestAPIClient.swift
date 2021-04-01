@@ -1,5 +1,8 @@
 @testable import APIota
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 struct TestAPIClient: APIotaClient {
 

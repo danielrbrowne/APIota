@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Defines an API endpoint for a Client whose body is an URL encoded form.
 ///
