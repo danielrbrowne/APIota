@@ -32,8 +32,8 @@ APIota is a lightweight Swift library for defining API clients for use in iOS an
 
 ### Supported Swift language versions and build tools
 
-- Swift 5.1 or higher
-- Xcode 11.0 or higher
+- Swift 5.2 or higher
+- Xcode 11.4 or higher
 
 ## Features
 

@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/realm/SwiftLint",
-                         .upToNextMajor(from: "0.43.1"))
+                 .upToNextMajor(from: "0.43.1"))
     ],
     targets: [
         .target(
