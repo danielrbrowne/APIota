@@ -137,9 +137,9 @@ public extension APIotaClient {
 
                 return result.data
             }
-        .decode(type: T.Response.self, decoder: decoder)
-        .receive(on: DispatchQueue.main)
-        .eraseToAnyPublisher()
+            .decode(type: T.SuccessResponse.self, decoder: decoder)
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
     }
 
     #endif
