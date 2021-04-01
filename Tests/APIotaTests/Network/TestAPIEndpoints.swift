@@ -2,7 +2,8 @@
 import Foundation
 
 struct TestTodosGetEndpoint: APIotaCodableEndpoint {
-    typealias Response = [Todo]
+    typealias SuccessResponse = [Todo]
+    typealias ErrorResponse = Data
     typealias Body = String
 
     let encoder = JSONEncoder()
@@ -19,7 +20,8 @@ struct TestTodosGetEndpoint: APIotaCodableEndpoint {
 }
 
 struct TestTodosCreateEndpoint: APIotaCodableEndpoint {
-    typealias Response = Todo
+    typealias SuccessResponse = Todo
+    typealias ErrorResponse = Data
     typealias Body = Todo
 
     let encoder = JSONEncoder()
@@ -36,7 +38,8 @@ struct TestTodosCreateEndpoint: APIotaCodableEndpoint {
 }
 
 struct TestTodosUpdateEndpoint: APIotaCodableEndpoint {
-    typealias Response = Todo
+    typealias SuccessResponse = Todo
+    typealias ErrorResponse = Data
     typealias Body = Todo
 
     let encoder = JSONEncoder()

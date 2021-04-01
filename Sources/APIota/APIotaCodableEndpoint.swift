@@ -6,8 +6,11 @@ import Foundation
 /// It can also optionaly include definitions for `headers`, `httpBody` and `queryItems`.
 public protocol APIotaCodableEndpoint {
 
-    /// A type alias for the decoded object for the response to a `URLRequest`.
-    associatedtype Response: Decodable
+    /// A type alias for the decoded object for the successful response to a `URLRequest`.
+    associatedtype SuccessResponse: Decodable
+
+    /// A type alias for the decoded object for the error response to a `URLRequest`.
+    associatedtype ErrorResponse: Decodable
 
     /// A type alias for the encoded data attached to the body of a `URLRequest`.
     associatedtype Body: Encodable
@@ -49,7 +52,7 @@ public extension APIotaCodableEndpoint {
         requestUrlComponents.queryItems = queryItems
 
         guard let requestUrl = requestUrlComponents.url else {
-            throw APIotaClientError.clientSide
+            throw APIotaClientError<ErrorResponse>.clientSide
         }
 
         var request = URLRequest(url: requestUrl)
