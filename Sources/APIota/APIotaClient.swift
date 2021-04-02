@@ -58,7 +58,7 @@ public extension APIotaClient {
 
             guard error == nil else {
                 defer {
-                    session.invalidateAndCancel()
+                    self.session.invalidateAndCancel()
                 }
                 callback(.failure(APIotaClientError<T.ErrorResponse>.internalError(error!)))
 
