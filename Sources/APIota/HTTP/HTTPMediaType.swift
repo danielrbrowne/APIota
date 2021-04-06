@@ -182,6 +182,11 @@ public extension HTTPMediaType {
 
 extension HTTPMediaType: Equatable {
 
+    /// Returns a Boolean value indicating whether two `HTTPMediaType` values are equal.
+    /// - Parameters:
+    ///   - lhs: A value to compare.
+    ///   - rhs: Another value to compare.
+    /// - Returns: `true` if the two media types are considered equal, and `false` otherwise.
     public static func == (lhs: Self, rhs: Self) -> Bool {
         if lhs.type == .any && rhs.type == .any {
             return true

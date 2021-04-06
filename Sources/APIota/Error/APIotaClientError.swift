@@ -63,6 +63,11 @@ public enum APIotaClientError<ErrorResponse: Decodable>: LocalizedError {
 
 extension APIotaClientError: Equatable {
 
+    /// Returns a Boolean value indicating whether two `APIotaClientError` values are equal.
+    /// - Parameters:
+    ///   - lhs: A value to compare.
+    ///   - rhs: Another value to compare.
+    /// - Returns: `true` if the two errors are considered equal, and `false` otherwise.
     public static func == (lhs: APIotaClientError, rhs: APIotaClientError) -> Bool {
         switch (lhs, rhs) {
         case ( .clientSide, .clientSide):

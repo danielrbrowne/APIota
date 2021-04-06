@@ -27,6 +27,8 @@ public enum HTTPStatusCode: Int {
         /// A response of unknown category.
         case unknown
 
+        /// Initializes a `HTTPStatusCode` based on a given value.
+        /// - Parameter rawValue: The status code of the HTTP status, e.g. `200`).
         public init(rawValue: Int) {
             switch rawValue {
             case 100...199:
