@@ -1654,427 +1654,427 @@
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 53,
+      "line": 55,
       "symbol": "HTTPStatusCode.continue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 54,
+      "line": 56,
       "symbol": "HTTPStatusCode.switchingProtocols",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 55,
+      "line": 57,
       "symbol": "HTTPStatusCode.processing",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 56,
+      "line": 58,
       "symbol": "HTTPStatusCode.earlyHints",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 59,
+      "line": 61,
       "symbol": "HTTPStatusCode.ok",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 60,
+      "line": 62,
       "symbol": "HTTPStatusCode.created",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 61,
+      "line": 63,
       "symbol": "HTTPStatusCode.accepted",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 62,
+      "line": 64,
       "symbol": "HTTPStatusCode.nonAuthoritativeInformation",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 63,
+      "line": 65,
       "symbol": "HTTPStatusCode.noContent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 64,
+      "line": 66,
       "symbol": "HTTPStatusCode.resetContent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 65,
+      "line": 67,
       "symbol": "HTTPStatusCode.partialContent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 66,
+      "line": 68,
       "symbol": "HTTPStatusCode.multiStatus",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 67,
+      "line": 69,
       "symbol": "HTTPStatusCode.alreadyReported",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 68,
+      "line": 70,
       "symbol": "HTTPStatusCode.imUsed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 70,
+      "line": 72,
       "symbol": "HTTPStatusCode.multipleChoices",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 71,
+      "line": 73,
       "symbol": "HTTPStatusCode.movedPermanently",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 72,
+      "line": 74,
       "symbol": "HTTPStatusCode.found",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 73,
+      "line": 75,
       "symbol": "HTTPStatusCode.seeOther",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 74,
+      "line": 76,
       "symbol": "HTTPStatusCode.notModified",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 75,
+      "line": 77,
       "symbol": "HTTPStatusCode.useProxy",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 76,
+      "line": 78,
       "symbol": "HTTPStatusCode.temporaryRedirect",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 77,
+      "line": 79,
       "symbol": "HTTPStatusCode.permanentRedirect",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 79,
+      "line": 81,
       "symbol": "HTTPStatusCode.badRequest",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 80,
+      "line": 82,
       "symbol": "HTTPStatusCode.unauthorized",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 81,
+      "line": 83,
       "symbol": "HTTPStatusCode.paymentRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 82,
+      "line": 84,
       "symbol": "HTTPStatusCode.forbidden",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 83,
+      "line": 85,
       "symbol": "HTTPStatusCode.notFound",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 84,
+      "line": 86,
       "symbol": "HTTPStatusCode.methodNotAllowed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 85,
+      "line": 87,
       "symbol": "HTTPStatusCode.notAcceptable",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 86,
+      "line": 88,
       "symbol": "HTTPStatusCode.proxyAuthenticationRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 87,
+      "line": 89,
       "symbol": "HTTPStatusCode.requestTimeout",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 88,
+      "line": 90,
       "symbol": "HTTPStatusCode.conflict",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 89,
+      "line": 91,
       "symbol": "HTTPStatusCode.gone",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 90,
+      "line": 92,
       "symbol": "HTTPStatusCode.lengthRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 91,
+      "line": 93,
       "symbol": "HTTPStatusCode.preconditionFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 92,
+      "line": 94,
       "symbol": "HTTPStatusCode.payloadTooLarge",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 93,
+      "line": 95,
       "symbol": "HTTPStatusCode.uriTooLong",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 94,
+      "line": 96,
       "symbol": "HTTPStatusCode.unsupportedMediaType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 95,
+      "line": 97,
       "symbol": "HTTPStatusCode.rangeNotSatisfiable",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 96,
+      "line": 98,
       "symbol": "HTTPStatusCode.expectationFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 97,
+      "line": 99,
       "symbol": "HTTPStatusCode.misdirectedRequest",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 98,
+      "line": 100,
       "symbol": "HTTPStatusCode.unprocessableEntity",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 99,
+      "line": 101,
       "symbol": "HTTPStatusCode.locked",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 100,
+      "line": 102,
       "symbol": "HTTPStatusCode.failedDependency",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 101,
+      "line": 103,
       "symbol": "HTTPStatusCode.tooEarly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 102,
+      "line": 104,
       "symbol": "HTTPStatusCode.upgradeRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 103,
+      "line": 105,
       "symbol": "HTTPStatusCode.preconditionRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 104,
+      "line": 106,
       "symbol": "HTTPStatusCode.tooManyRequests",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 105,
+      "line": 107,
       "symbol": "HTTPStatusCode.requestHeaderFieldsTooLarge",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 106,
+      "line": 108,
       "symbol": "HTTPStatusCode.unavailableForLegalReasons",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 108,
+      "line": 110,
       "symbol": "HTTPStatusCode.internalServerError",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 109,
+      "line": 111,
       "symbol": "HTTPStatusCode.notImplemented",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 110,
+      "line": 112,
       "symbol": "HTTPStatusCode.badGateway",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 111,
+      "line": 113,
       "symbol": "HTTPStatusCode.serviceUnavailable",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 112,
+      "line": 114,
       "symbol": "HTTPStatusCode.gatewayTimeout",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 113,
+      "line": 115,
       "symbol": "HTTPStatusCode.httpVersionNotSupported",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 114,
+      "line": 116,
       "symbol": "HTTPStatusCode.variantAlsoNegotiates",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 115,
+      "line": 117,
       "symbol": "HTTPStatusCode.insufficientStorage",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 116,
+      "line": 118,
       "symbol": "HTTPStatusCode.loopDetected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 117,
+      "line": 119,
       "symbol": "HTTPStatusCode.notExtended",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/danielbrowne/Documents/Work/APIota/Sources/APIota/HTTP/HTTPStatusCode.swift",
-      "line": 118,
+      "line": 120,
       "symbol": "HTTPStatusCode.networkAuthenticationRequired",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
