@@ -20,6 +20,10 @@ opt_in_rules:
 identifier_name:
   excluded:
   - id
+  - if
+  - im
+  - ok
+  - te
   - to
 
 warning_threshold: 1
