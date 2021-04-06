@@ -116,24 +116,51 @@
 <p><a href="https://github.com/danielrbrowne/APIota/actions"><img src="https://github.com/danielrbrowne/APIota/workflows/APIota%20CI/badge.svg" alt="CI Status"></a>
 <a href="https://github.com/danielrbrowne/APIota/releases"><img src="https://img.shields.io/github/v/release/danielrbrowne/APIota" alt="Latest Release"></a>
 <a href="https://danielrbrowne.github.io/APIota/"><img src="https://img.shields.io/badge/Docs-here!-lightgrey" alt="API Docs"></a>
-<a href="https://github.com/danielrbrowne/APIota/blob/master/Package.swift"><img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS-yellow" alt="Supported Platforms"></a>
+<a href="https://swiftpackageindex.com/danielrbrowne/APIota"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fdanielrbrowne%2FAPIota%2Fbadge%3Ftype%3Dplatforms" alt="Supported Platforms"></a>
+<a href="https://swiftpackageindex.com/danielrbrowne/APIota"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fdanielrbrowne%2FAPIota%2Fbadge%3Ftype%3Dswift-versions" alt="Swift Versions"></a>
 <a href="https://github.com/danielrbrowne/APIota/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/danielrbrowne/APIota" alt="LICENSE"></a></p>
 
-<p>APIota is a lightweight Swift library for defining API clients for use in iOS and macOS apps. It is written using a protocol-oriented approach, and allows your <code>Codable</code> model objects to be decoded from JSON REST API endpoints really easily!</p>
+<p>APIota is a lightweight Swift library for defining API clients for use in iOS, macOS, tvOS, watchOS or Linux. It is written using a protocol-oriented approach, and allows your <code>Codable</code> model objects to be decoded from JSON REST API endpoints really easily!</p>
 
 <ul>
+<li><a href="#supported-platforms">Supported platforms</a></li>
 <li><a href="#features">Features</a></li>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#usage">Usage</a></li>
-<li><a href="#reporting-bugs-and-requesting-features">Reporting Bugs and Requesting Features</a></li>
-<li><a href="#feature-roadmap">Feature Roadmap</a></li>
+<li><a href="#reporting-bugs-and-requesting-features">Reporting bugs and requesting features</a></li>
+<li><a href="#feature-roadmap">Feature roadmap</a></li>
 <li><a href="#license">License</a></li>
+</ul>
+<h2 id='supported-platforms' class='heading'>Supported platforms</h2>
+
+<ul>
+<li>iOS</li>
+<li>macOS</li>
+<li>tvOS</li>
+<li>watchOS * (see note below)</li>
+<li>Linux</li>
+</ul>
+
+<p><strong>NOTE:</strong></p>
+
+<ul>
+<li>watchOS support is available as a user of the APIota library. However, building directly from source fails currently due to <code>XCTest</code> not being available on watchOS.</li>
+</ul>
+<h3 id='supported-swift-language-versions-and-build-tools' class='heading'>Supported Swift language versions and build tools</h3>
+
+<ul>
+<li>Swift 5.2 or higher</li>
+<li>Xcode 11.4 or higher</li>
 </ul>
 <h2 id='features' class='heading'>Features</h2>
 
 <ul>
-<li>[x] JSON request and response body encoding and decoding support when using model objects conforming to <code>Codable</code>.</li>
-<li>[x] <a href="https://developer.apple.com/documentation/combine">Combine</a> support (when building against iOS 13.0+ or macOS 10.15+).</li>
+<li>[x] JSON request and response body encoding and decoding support when using <code>Codable</code> model objects.
+
+<ul>
+<li>Encoding and decoding strategies can be customized by supplying configured <code>JSONEncoder</code> or <code>JSONDecoder</code> instances.</li>
+</ul></li>
+<li>[x] <a href="https://developer.apple.com/documentation/combine">Combine</a> support (when building against iOS 13.0+, macOS 10.15+, tvOS 13.0+ or watchOS 6.0+).</li>
 <li>[x] URL-encoded form data request support.</li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
@@ -142,7 +169,7 @@
 <p>Simply add the following to the <code>dependencies</code> array in your <code>Package.swift</code> file:</p>
 <pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
     <span class="err">…</span>
-    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/danielrbrowne/APIota"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"0.1.0"</span><span class="p">),</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/danielrbrowne/APIota"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"0.2.0"</span><span class="p">),</span>
     <span class="err">…</span>
   <span class="p">]</span>
 </code></pre>
@@ -170,8 +197,9 @@
 
 <p>The next step is to define the endpoint that the requests should be sent to. An example of a simple GET request is shown below, however more complex requests can also be defined easily:</p>
 <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">JSONPlaceholderGetTodosEndpoint</span><span class="p">:</span> <span class="kt">APIotaCodableEndpoint</span> <span class="p">{</span>
-    <span class="kd">typealias</span> <span class="kt">Response</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Todo</span><span class="p">]</span>
-    <span class="kd">typealias</span> <span class="kt">Body</span> <span class="o">=</span> <span class="kt">String</span>
+    <span class="kd">typealias</span> <span class="kt">SuccessResponse</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Todo</span><span class="p">]</span>
+    <span class="kd">typealias</span> <span class="kt">ErrorResponse</span> <span class="o">=</span> <span class="kt">MyDecodableError</span>
+    <span class="kd">typealias</span> <span class="kt">Body</span> <span class="o">=</span> <span class="kt">MyEncodableBody</span>
 
     <span class="k">let</span> <span class="nv">headers</span><span class="p">:</span> <span class="kt">HTTPHeaders</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
 
@@ -212,7 +240,7 @@
     <span class="o">.</span><span class="nf">catch</span><span class="p">({</span> <span class="n">error</span> <span class="k">in</span>
         <span class="c1">// Handle the error returned from the API Client</span>
     <span class="p">})</span>
-    <span class="o">.</span><span class="nf">assign</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="err">\</span><span class="o">.</span><span class="n">todosList</span><span class="p">,</span> <span class="nv">on</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">assign</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">todosList</span><span class="p">,</span> <span class="nv">on</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
 <span class="p">}</span>
 
 </code></pre>
@@ -221,15 +249,14 @@
 <p>Full documentation of APIota can be found in the <a href="https://danielrbrowne.github.io/APIota/">API docs</a>.</p>
 
 <p>A practical example of APIota in action can be found in the <a href="./Example/APIotaExample/">Example Project</a>.</p>
-<h2 id='reporting-bugs-and-requesting-features' class='heading'>Reporting Bugs and Requesting Features</h2>
+<h2 id='reporting-bugs-and-requesting-features' class='heading'>Reporting bugs and requesting features</h2>
 
 <p>Please ensure you use the relevant issue template when reporting a bug or requesting a new feature. Also please check first to see if there is an open issue that already covers your bug report or new feature request.</p>
-<h2 id='feature-roadmap' class='heading'>Feature Roadmap</h2>
+<h2 id='feature-roadmap' class='heading'>Feature roadmap</h2>
 
 <p>In no particular order, and as a draft proposal:</p>
 
 <ul>
-<li>[ ] Customizable JSON encoding strategies for requests.</li>
 <li>[ ] Automatic <code>Content-Type</code> header inference for requests.</li>
 <li>[ ] Customizable request parameter encoding strategies.</li>
 <li>[ ] Configurable response caching for requests.</li>
@@ -250,8 +277,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://github.com/danielrbrowne" target="_blank" rel="external">Daniel Ryan Browne</a>. All rights reserved. (Last updated: 2020-07-09)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://github.com/danielrbrowne" target="_blank" rel="external">Daniel Ryan Browne</a>. All rights reserved. (Last updated: 2021-04-06)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

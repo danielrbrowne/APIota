@@ -9,7 +9,7 @@
 [![Swift Versions](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fdanielrbrowne%2FAPIota%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/danielrbrowne/APIota)
 [![LICENSE](https://img.shields.io/github/license/danielrbrowne/APIota)](https://github.com/danielrbrowne/APIota/blob/master/LICENSE.md)
 
-APIota is a lightweight Swift library for defining API clients for use in iOS and macOS apps. It is written using a protocol-oriented approach, and allows your `Codable` model objects to be decoded from JSON REST API endpoints really easily!
+APIota is a lightweight Swift library for defining API clients for use in iOS, macOS, tvOS, watchOS or Linux. It is written using a protocol-oriented approach, and allows your `Codable` model objects to be decoded from JSON REST API endpoints really easily!
 
 - [Supported platforms](#supported-platforms)
 - [Features](#features)
@@ -39,7 +39,7 @@ APIota is a lightweight Swift library for defining API clients for use in iOS an
 
 - [x] JSON request and response body encoding and decoding support when using `Codable` model objects.
   - Encoding and decoding strategies can be customized by supplying configured `JSONEncoder` or `JSONDecoder` instances.
-- [x] [Combine](https://developer.apple.com/documentation/combine) support (when building against iOS 13.0+ or macOS 10.15+).
+- [x] [Combine](https://developer.apple.com/documentation/combine) support (when building against iOS 13.0+, macOS 10.15+, tvOS 13.0+ or watchOS 6.0+).
 - [x] URL-encoded form data request support.
 
 ## Installation
@@ -51,7 +51,7 @@ Simply add the following to the `dependencies` array in your `Package.swift` fil
 ```swift
 dependencies: [
     …
-    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.1.3"),
+    .package(url: "https://github.com/danielrbrowne/APIota", from: "0.2.0"),
     …
   ]
 ```
@@ -84,8 +84,9 @@ The next step is to define the endpoint that the requests should be sent to. An 
 
 ```swift
 struct JSONPlaceholderGetTodosEndpoint: APIotaCodableEndpoint {
-    typealias Response = [Todo]
-    typealias Body = String
+    typealias SuccessResponse = [Todo]
+    typealias ErrorResponse = MyDecodableError
+    typealias Body = MyEncodableBody
 
     let headers: HTTPHeaders? = nil
 

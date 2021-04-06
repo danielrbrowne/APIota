@@ -10,23 +10,35 @@ public enum HTTPStatusCode: Int {
     public enum Category: Int {
 
         /// An informational (i.e. 100 - 199) response.
+        ///
+        /// The request was received, processing is continuing.
         case informational
 
         /// A successful (i.e. 200 - 299) response.
+        ///
+        /// The request was successfully received, understood and accepted by the server.
         case successful
 
         /// A redirection (i.e. 300 - 399) response.
+        ///
+        /// Further action must be taken in order to complete the request.
         case redirection
 
         /// A client error (i.e. 400 - 499) response.
+        ///
+        /// The request was malformed or cannot be fulfiled due to a client-side error.
         case clientError
 
         /// A server error (i.e. 500 - 599) response.
+        ///
+        /// The server failed to fulfil an otherwise valid request.
         case serverError
 
         /// A response of unknown category.
         case unknown
 
+        /// Initializes a `HTTPStatusCode` based on a given value.
+        /// - Parameter rawValue: The status code of the HTTP status, e.g. `200`).
         public init(rawValue: Int) {
             switch rawValue {
             case 100...199:
