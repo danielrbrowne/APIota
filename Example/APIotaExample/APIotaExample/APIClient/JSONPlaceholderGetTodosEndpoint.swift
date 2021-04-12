@@ -10,8 +10,8 @@ import APIota
 import Foundation
 
 struct JSONPlaceholderGetTodosEndpoint: APIotaCodableEndpoint {
-
-    typealias Response = [Todo]
+    typealias SuccessResponse = [Todo]
+    typealias ErrorResponse = Data
     typealias Body = String
 
     let encoder: JSONEncoder = JSONEncoder()
