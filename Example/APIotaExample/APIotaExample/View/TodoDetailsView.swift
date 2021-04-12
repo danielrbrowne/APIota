@@ -23,7 +23,7 @@ struct TodoDetailsView: View {
                         .padding(.leading, 20.0)
                         .padding(.trailing, 20.0)
                     Text("Completed?: \(selectedTodo!.completed! ? "YES" : "NO")")
-                    Text("Item ID:\(selectedTodo!.id!)")
+                    Text("Item ID: \(selectedTodo!.id!)")
                     Text("User ID: \(selectedTodo!.userId!)")
                 }
             } else {
